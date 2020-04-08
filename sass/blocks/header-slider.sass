@@ -1,0 +1,38 @@
+.header-wrap-slider
+    height: 708px
+    max-width: 734px
+        
+.swiper-container
+    width: 100%
+    height: 100%
+    .swiper-slide
+        text-align: center
+        font-size: 18px
+        background: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        
+        &-1, &-2, &-3, &-4, &-5, &-6
+            position: relative
+            & > h2
+                position: absolute
+                top: 20px
+                left: 20px
+                font-weight: normal
+                font-size: 20px
+.header-wrap-slider > .swiper-container-vertical>.swiper-pagination-bullets
+    right: unset
+    left: 30px
+    top: unset
+    bottom: -20px
+
+.header-wrap-slider 
+    * .swiper-pagination-bullet
+        background: $pink-light !important
+        height: 15px
+        width: 15px
+        &-active
+            background: $white !important
+            height: 15px
+            width: 15px

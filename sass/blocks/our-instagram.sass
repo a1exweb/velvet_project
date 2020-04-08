@@ -1,0 +1,63 @@
+.our-instagram
+    position: relative
+    &__count
+        margin-top: -25px
+        right: 0
+        position: absolute
+    &__title
+        margin-bottom: 80px
+    &-photo
+        position: relative
+        max-width: 470px
+        display: flex
+        justify-content: center
+        align-items: center
+        &:hover .our-instagram-photo-hover
+            visibility: visible
+            opacity: 1
+        &-hover
+            visibility: hidden
+            position: absolute
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: rgba($pink, .8)
+            height: 100%
+            width: 100%
+            text-align: center
+            color: $white
+            opacity: 0
+            transition: .5s
+            
+            &__wrap
+                max-width: 340px
+            &__text
+                margin-bottom: 20px
+            & * button
+                background-color: transparent
+                border: 0
+                padding-right: 25px
+                position: relative
+    &-block
+        max-width: 1500px
+        margin: auto
+        &__line
+            display: flex
+            justify-content: space-around
+            margin-bottom: 25px
+    &__button-show-more
+        margin: auto
+        margin-top: 50px
+        margin-bottom: 80px
+.button-show-more
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 315px
+    padding: 20px 45px
+    width: 100%
+    border-radius: 2px
+    color: $white
+    text-decoration: none
+    background-color: $pink
+    font-size: 30px

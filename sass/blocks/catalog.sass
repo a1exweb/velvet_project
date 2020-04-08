@@ -1,0 +1,105 @@
+.catalog
+    position: relative
+    & .circle
+        position: absolute
+        height: 780px
+        width: 780px
+        background-color: $beige
+        border-radius: 50%
+        left: -15%
+        bottom: 0
+    &__title
+        margin-bottom: 50px
+    &-block
+        max-width: 1215px
+        margin: 0 auto
+        &__line
+            display: flex
+            justify-content: space-around
+            margin-bottom: 30px
+    &-card
+        display: flex
+        flex-direction: column
+        color: $black
+        position: relative
+        max-width: 385px
+        &:hover .catalog-card-hover
+            visibility: visible
+            opacity: 1
+        &-hover
+            visibility: hidden
+            opacity: 0
+            transition: .5s
+            &__buttons
+                position: absolute
+                top: 8px
+                right: 8px
+                & * i
+                    font-size: 25px
+                & > button
+                    background-color: transparent
+                    border: 0
+                    margin-right: 5px
+                    height: 40px
+                    width: 40px
+                    &:hover
+                        background-color: $beige
+                        border-radius: 50%
+            &__read-more
+                position: absolute
+                top: 350px
+                left: 50%
+                transform: translateX(-50%)
+                text-decoration: none
+                color: $black
+                background-color: rgba($white, .8)
+                padding: 15px
+                font-size: 30px
+                display: flex
+                justify-content: center
+                max-width: 300px
+                width: 100%
+                &:hover
+                    background-color: rgba($beige, .8)
+                    color: $white
+        &__product
+            &-text
+                margin-left: 20px
+            &-name
+                margin-top: 20px
+                font-family: 'Myanmar Text'
+                font-size: 40px
+            &-descrilption
+                font-family: 'Myanmar Text'
+            &-sale
+                position: relative
+                margin-bottom: 10px
+                font-family: 'Source Sans Pro'
+                font-size: 30px
+                &::after
+                    content: ''
+                    top: 60%
+                    left: 0
+                    position: absolute
+                    height: 2px
+                    width: 100%
+                    max-width: 60px
+                    background-color: $black
+            &-price
+                font-weight: bold
+                font-family: 'Source Sans Pro'
+                font-size: 30px
+                & > i
+                    font-weight: bold
+        &__new
+            position: absolute
+            top: 55px
+            right: 0
+            padding: 8px
+            padding-right: 5px
+            padding-left: 15px
+            padding-bottom: 0
+            background-color: $beige
+            color: $white
+            font-family: 'Myanmar Text'
+            font-size: 25px

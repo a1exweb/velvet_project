@@ -1,0 +1,61 @@
+.main
+    &__header
+        &-content
+            display: flex
+            justify-content: space-between
+            height: 900px
+        &-leftside
+            display: flex
+            justify-content: center
+            flex-direction: column
+            padding-left: 5%
+            & > .button-show
+                margin-left: 50px
+                margin-top: 20px
+            & > .block-icons
+                margin-top: 250px
+    &__title
+        font-weight: normal
+        font-size: 45px
+        font-family: 'Myanmar Text'
+        &-description
+            display: block
+            font-size: 23px
+            font-family: 'Source Sans Pro'
+            margin-bottom: 8px
+.button-show
+    display: block
+    background-color: $pink
+    border: 0
+    border-radius: 2px
+    padding: 15px 25px
+    color: $white
+    max-width: 224px
+.bg-pink-rightsidebar
+    float: right
+    width: 100%
+    max-width: 500px
+    background-color: $pink
+    height: 100px
+.block-icons
+    display: flex
+    & > a
+        text-decoration: none
+        font-size: 27px
+        margin-right: 5px
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 45px
+        width: 45px
+        color: $text-main
+        &:hover
+            background-color: $pink
+            border-radius: 50%
+            color: $white
+.title
+    font-family: 'Source Sans Pro'
+    font-size: 40px
+    font-weight: normal
+    text-align: center
+    margin: 0

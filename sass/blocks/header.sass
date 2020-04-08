@@ -1,0 +1,67 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100px
+    padding-left: 5%
+    &-menu
+        display: flex
+        list-style: none
+        padding: 0
+        &__link
+            margin-right: 40px
+            text-decoration: none
+            color: $text-main
+    &-rightsidebar
+        display: flex
+        align-items: center
+        background-color: $pink
+        height: 100%
+        padding-right: 5%
+        padding-left: 70px
+        max-width: 500px
+        &__search
+            height: 50px
+            background: rgba($pink-light, .25)
+            border: 0
+            &-form
+                position: relative
+                margin-right: 30px
+            &-button
+                position: absolute
+                right: 25px
+                top: 50%
+                transform: translateY(-50%)
+                background-color: transparent
+                border: 0
+                cursor: pointer
+                & > i
+                    font-size: 27px
+        &__button
+            background-color: transparent
+            border: 0
+            margin-right: 10px
+            cursor: pointer
+            &_buy, &_like, &_profile
+                    & > i
+                        font-size: 27px
+    &__phone
+        margin-right: 10px
+        &-link
+            display: flex
+            align-items: center
+            color: $text-main
+            text-decoration: none
+            & > i
+                font-size: 27px
+.logo
+    text-decoration: underline
+    font-size: 27px
+    &-link
+        font-family: 'Libre Baskerville'
+        color: $text-main
+        text-transform: uppercase
+        text-decoration: none
+    &__description
+        font-size: 12px
+        display: block
