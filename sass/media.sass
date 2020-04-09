@@ -1,0 +1,153 @@
+@media ( max-width: 1550px )
+    html
+        font-size: 14px
+    .catalog
+        &-card
+            zoom: .8
+    .our-instagram
+        &-photo
+            zoom: .8
+    .recently-watched
+        &__product
+            zoom: .8
+    .about
+        &__image
+            zoom: .8
+    .header
+        &-menu
+            &__link
+                &::after
+                    width: 35px
+                    height: 35px
+@media ( max-width: 1400px )
+    html
+        font-size: 12px
+    .recently-watched
+        &-block
+            max-width: 1100px
+        &__product
+            zoom: .75
+    .catalog
+        &-card
+            zoom: .75
+    .our-instagram
+        &-photo
+            zoom: .75
+            &-hover
+                zoom: 1.5
+    .about
+        &__image
+            zoom: .75
+    .header
+        &-menu
+            &__link
+                &::after
+                    width: 30px
+                    height: 30px
+                    top: -8px
+@media ( max-width: 1280px )
+    html
+        font-size: 12px
+    .recently-watched
+        &-block
+            max-width: 890px
+        &__product
+            zoom: .6
+    .catalog
+        &-card
+            zoom: .6
+    .our-instagram
+        &-photo
+            zoom: .6
+    .about
+        &__image
+            zoom: .6
+    .header
+        &-menu
+            max-width: 250px
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            &__link
+                margin-right: 20px
+                &:hover
+                    color: $pink
+                &::after
+                    display: none
+    .main
+        &__title
+            font-size: px-to-rem(35px)
+            &-description
+                font-size: px-to-rem(25px)
+    .main__header-leftside>.button-show
+        margin-left: 0
+@media ( max-width: 992px )
+    .header
+        padding-right: 5%
+        &-menu
+            display: none
+            &-burger
+                display: block
+        &-rightsidebar
+            display: none
+        &__phone-link
+            display: none
+    .main
+        &__title
+            font-size: px-to-rem(30px)
+            &-description
+                font-size: px-to-rem(20px)
+    .catalog
+        &-block
+            max-width: 500px
+            display: flex
+            justify-content: space-around
+            &__line
+                display: flex
+                flex-direction: column
+        &-card
+            margin-bottom: 30px
+    .our-instagram
+        &-block
+            max-width: 600px
+            display: flex
+            justify-content: space-around
+            &__line
+                display: flex
+                flex-direction: column
+        &-photo
+            margin-bottom: 30px
+    .about
+        &__image
+            zoom: .5
+    .recently-watched
+        &-block
+            max-width: 700px
+        &__product
+            zoom: .5
+@media ( max-width: 920px )
+    .main
+        &__header
+            &-leftside
+                display: none
+            &-rightside
+                display: flex
+                margin: 0 auto
+    .about
+        &-rightside
+            display: none
+    .recently-watched-block
+        justify-content: center
+        & > a:nth-child(n + 2)
+            display: none
+    .footer
+        &__block
+            width: 100%
+@media ( max-width: 600px )
+    .catalog-block > .catalog-block__line:last-child
+        display: none
+    .catalog-block__line > .catalog-card:nth-child(n + 2)
+        display: none
+    .catalog .circle
+        display: none
+    

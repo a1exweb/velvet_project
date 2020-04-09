@@ -1,6 +1,6 @@
 .header-wrap-slider
-    height: 708px
-    max-width: 734px
+    height: px-to-rem(708px)
+    max-width: px-to-rem(734px)
         
 .swiper-container
     width: 100%
@@ -12,7 +12,8 @@
         display: flex
         justify-content: center
         align-items: center
-        
+        & > img
+            height: inherit
         &-1, &-2, &-3, &-4, &-5, &-6
             position: relative
             & > h2
@@ -23,7 +24,7 @@
                 font-size: 20px
 .header-wrap-slider > .swiper-container-vertical>.swiper-pagination-bullets
     right: unset
-    left: 30px
+    left: px-to-rem(30px)
     top: unset
     bottom: -20px
 

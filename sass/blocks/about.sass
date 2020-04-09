@@ -1,18 +1,20 @@
 .about
     &__title
-        margin-bottom: 90px
+        margin-bottom: px-to-rem(90px)
         &-left
             text-align: left !important
             margin-left: 25%
     &__description-block
-        margin-top: 70px
+        margin-top: px-to-rem(70px)
         margin-left: 35%
     &__text
-        margin-bottom: 40px
-        max-width: 650px
+        margin-bottom: px-to-rem(40px)
+        max-width: px-to-rem(650px)
     &-wrap
         display: flex
         justify-content: space-between
+    &-leftside
+        z-index: 999
     &-rightside
         position: relative
     &__image
@@ -20,9 +22,16 @@
         top: 50%
         right: 0
         transform: translateY(-50%)
+    &__circle
+        position: absolute
+        background-color: $pink
+        width: 440px
+        height: 440px
+        border-radius: 50%
+        left: -50%
 .rectangle
     position: relative
     display: flex
-    height: 900px
-    width: 300px
+    height: px-to-rem(900px)
+    width: px-to-rem(300px)
     background-color: $pink

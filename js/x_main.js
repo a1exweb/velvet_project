@@ -3,5 +3,8 @@ var swiper = new Swiper('.swiper-container', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        autoHeight: true,
+        setWrapperSize: true,
+        roundLengths: true
     },
 });
