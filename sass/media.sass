@@ -143,6 +143,17 @@
     .about
         &-rightside
             display: none
+        &-leftside
+            width: 100%
+        &__title
+            display: none
+            &-left
+                text-align: center !important
+                margin-left: 0
+        &__description-block
+            margin-left: 15%
+        &__text
+            max-width: 400px
     .recently-watched-block
         justify-content: center
         & > a:nth-child(n + 2)
@@ -182,8 +193,13 @@
     .header-wrap-slider
         height: px-to-rem(406px)
         max-width: px-to-rem(420px)
+    .about
+        &__text
+            max-width: 300px
 @media ( max-width: 400px )
     .header-wrap-slider
         height: 306px
         max-width: 320px
-    
+    .about
+        &__text
+            max-width: 250px
