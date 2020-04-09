@@ -128,11 +128,17 @@
 @media ( max-width: 920px )
     .main
         &__header
-            &-leftside
-                display: none
+            &-content
+                display: flex
+                flex-direction: column-reverse
             &-rightside
                 display: flex
                 margin: 0 auto
+            &-leftside
+                & > .block-icons
+                    display: none
+        &__title
+            display: none
     .about
         &-rightside
             display: none
@@ -143,6 +149,13 @@
     .footer
         &__block
             width: 100%
+    .bg-pink-rightsidebar
+        display: none
+    .main__header-leftside
+        padding-left: 0
+    .main__header-leftside>.button-show
+        margin: 30px auto
+
 @media ( max-width: 600px )
     .catalog-block > .catalog-block__line:last-child
         display: none
@@ -150,6 +163,26 @@
         display: none
     .catalog .circle
         display: none
+    .footer__row:nth-child(2), .footer__row:nth-child(3)
+        display: none
+    .footer__row:nth-child(1) > .block-icons
+        display: none
+    .footer__row:nth-child(4)>.block-icons
+        display: flex
     .footer
-        
+        &__block
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__row
+            margin-bottom: 20px
+        &__title-contacts
+            text-align: center
+    .header-wrap-slider
+        height: px-to-rem(406px)
+        max-width: px-to-rem(420px)
+@media ( max-width: 400px )
+    .header-wrap-slider
+        height: 306px
+        max-width: 320px
     

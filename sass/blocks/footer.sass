@@ -9,9 +9,13 @@
         justify-content: space-around
         padding-top: px-to-rem(110px)
         width: 70%
+    &__title-contacts
+        display: block
+        margin-bottom: 5px
     &-menu
         list-style: none
         &__item
+            margin-bottom: 5px
             & * i
                 margin-right: 5px
     & * .block-icons * i
@@ -31,3 +35,7 @@
         margin: auto
         margin-top: px-to-rem(80px)
         padding-bottom: 20px
+.footer__row:nth-child(4) > .block-icons
+    display: none
+.footer * .block-icons
+    justify-content: center
