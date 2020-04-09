@@ -8,3 +8,17 @@ var swiper = new Swiper('.swiper-container', {
         roundLengths: true
     },
 });
+
+$(window).on('load resize', function() {
+    if ($(window).width() < 640) {
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel(
+            {
+                items: 1,
+                nav: true,
+                navText: [' ',' ']
+            }
+        );
+    });
+    }
+});
