@@ -22,3 +22,11 @@ $(window).on('load resize', function() {
     });
     }
 });
+
+$('[data-show="mobile-menu"').on('click', function() {
+    $('.menu-mobile').addClass('menu-mobile_active')
+});
+
+$('[data-close="mobile-menu"').on('click', function() {
+    $('.menu-mobile').removeClass('menu-mobile_active')
+});

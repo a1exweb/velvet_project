@@ -1,0 +1,61 @@
+.menu-mobile
+    background-color: rgba($pink, .9)
+    height: 100%
+    width: 100%
+    position: fixed
+    z-index: 999
+    visibility: hidden
+    transform: translateX(-100%)
+    transition: .2s
+    & * button
+        background-color: transparent
+        border: 0
+        color: $white
+        font-size: 27px
+    & * button[data-close="mobile-menu"]
+        position: relative
+        height: 27px
+        width: 27px
+        &::before, &::after
+            position: absolute
+            content: ''
+            height: 2px
+            width: 27px
+            background-color: $white
+            top: 50%
+            left: 0
+            transform: rotate(45deg)
+        &::after
+            transform: rotate(-45deg)
+    & * a
+        color: $white
+        text-decoration: none
+        font-size: 14px
+        margin-left: 33px
+        margin-bottom: 10px
+        display: block
+    &__buttons
+        float: right
+        margin-top: 20px
+        margin-right: 20px
+    &_active
+        visibility: visible
+        transform: translateX(0)
+.mobile
+    &-list
+        margin-top: 20px
+        margin-left: 20px
+        list-style: none
+        &__item
+            & * span
+                font-size: 14px
+                margin-left: 5px
+.menu-mobile * button[data-show="profile"]
+    display: flex
+    align-items: center
+    margin-bottom: 5px
+.menu-mobile * button[data-close="mobile-menu"]
+    margin-top: 20px
+    margin-left: 20px
+.menu-mobile * button[data-show="like"]
+    margin-right: 5px

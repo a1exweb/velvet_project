@@ -13,12 +13,33 @@
 </head>
 
 <body>
+	<div class="menu-mobile">
+		<div class="menu-mobile__up">
+			<button data-close="mobile-menu"></button>
+			<div class="menu-mobile__buttons">
+				<button class="menu-mobile__button" data-show="like"><i
+					class="far fa-heart white-color"></i></button>
+				<button class="menu-mobile__button" data-show="shopping"><i
+					class="far fa-shopping-cart white-color"></i></button>
+			</div>
+		</div>
+
+		<ul class="mobile-list">
+			<li class="mobile-list__item"><button class="menu-mobile__button" data-show="profile"><i
+				class="far fa-user-circle  white-color"></i> <span>Личный кабинет</span></button></li>
+			<li class="mobile-list__item"><a href="#" class="mobile-list__link">Главная</a></li>
+			<li class="mobile-list__item"><a href="#" class="mobile-list__link">Каталог</a></li>
+			<li class="mobile-list__item"><a href="#" class="mobile-list__link">О нас</a></li>
+			<li class="mobile-list__item"><a href="#" class="mobile-list__link">LookBook</a></li>
+			<li class="mobile-list__item"><a href="#" class="mobile-list__link">Партнерам</a></li>
+			<li class="mobile-list__item"><a href="#" class="mobile-list__link">Контакты</a></li>
+		</ul>
+	</div>
+
 	<div class="container">
 		<header class="header">
-			<button id="show-menu" class="header-menu-burger"><i class="fa fa-align-justify" aria-hidden="true"></i></button>
-			<div class="header-menu-mobile">
-				
-			</div>
+			<button data-show="mobile-menu" class="header-menu-burger"><i class="fa fa-align-justify" aria-hidden="true"></i></button>
+			
 			<a href="#" class="logo-link"><span class="logo">velvet</span><span class="logo__description">fashion
 					stuido</span></a>
 		
@@ -38,11 +59,11 @@
 					<button class="header-rightsidebar__search-button"><i
 							class="far fa-search white-color"></i></button>
 				</form>
-				<button class="header-rightsidebar__button header-rightsidebar__button_buy"><i
+				<button class="header-rightsidebar__button header-rightsidebar__button_buy" data-show="shopping"><i
 						class="far fa-shopping-cart white-color"></i></button>
-				<button class="header-rightsidebar__button header-rightsidebar__button_like"><i
+				<button class="header-rightsidebar__button header-rightsidebar__button_like" data-show="like"><i
 						class="far fa-heart white-color"></i></button>
-				<button class="header-rightsidebar__button header-rightsidebar__button_profile"><i
+				<button class="header-rightsidebar__button header-rightsidebar__button_profile" data-show="profile"><i
 						class="far fa-user-circle  white-color"></i></button>
 			</div>
 		</header>
