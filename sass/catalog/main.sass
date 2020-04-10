@@ -1,0 +1,93 @@
+.main
+    &__title
+        &_catalog
+            text-align: center
+            margin: auto
+.catalog
+    &-more
+        &-photo
+            &__block
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                margin-top: 75px
+            &__image
+                margin-bottom: 60px
+            &__button-show-more
+                margin: auto
+                margin-bottom: 80px
+    &-slide
+        max-height: 300px
+        max-width: max-content
+    &-page
+        &__headerbox
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            margin-top: 80px
+            margin-bottom: 80px
+        &__title
+            margin-top: 70px
+            margin-bottom: 187px
+            &_underline
+                position: relative
+                &::after
+                    position: absolute
+                    content: ''
+                    width: 100%
+                    height: 2px
+                    background-color: $text-main
+                    left: 0
+                    bottom: -20px
+.owl-carousel-catalog
+    max-width: 718px
+    padding-right: 80px
+    & > .owl-nav
+        position: absolute
+        top: 30%
+        right: 0
+    & * .owl-prev, .owl-next
+        margin-right: 0
+    & * .owl-next
+        position: absolute
+        top: 60px
+@media (max-width: 800px)
+    .owl-carousel-catalog
+        max-width: 319px
+        padding-right: 0
+        margin: auto
+        & > .owl-nav
+            position: relative
+            margin-top: 30px
+        & * .owl-prev
+            margin-right: 10px
+        & * .owl-next
+            position: relative
+            top: 0
+    .catalog-page__leftside img
+        zoom: .8
+    .catalog-page__title
+        max-width: 300px
+        margin: auto
+        &_underline
+            margin-top: 30px
+            margin-bottom: 40px
+            &::after
+                display: none
+    .catalog-more-photo__title
+        max-width: 300px
+        margin: auto
+    .catalog-page__headerbox
+        margin-top: 40px
+        margin-bottom: 40px
+@media (max-width: 500px)
+    .catalog
+        &-more
+            &-photo
+                &__image
+                    max-width: 300px
+    .catalog-page__leftside img
+        zoom: .4
+    .owl-carousel-catalog
+        zoom: .7
+        
