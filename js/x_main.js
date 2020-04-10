@@ -26,6 +26,7 @@ $(document).ready(function () {
         nav: true,
         loop: true,
         autoWidth: true,
+        margin: 50,
         navText: [' ', ' '],
     });
 });
