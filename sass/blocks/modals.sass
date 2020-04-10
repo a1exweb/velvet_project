@@ -1,0 +1,67 @@
+
+.modal
+    &-rightsidebar
+        position: absolute
+        top: 120px
+        right: 20px
+        background-color: $white
+        padding: 40px 30px
+        z-index: 999
+        visibility: hidden
+        opacity: 0
+        transition: .2s
+    &-shopping, &-profile
+        &-overlay
+            position: fixed
+            background-color: rgba($black, .1)
+            z-index: 999
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0
+            visibility: hidden
+            &_active
+                visibility: visible
+        &_active
+            visibility: visible
+            opacity: 1
+        &__title
+            text-align: center
+            margin-bottom: 50px
+        &__subtitle
+            color: $pink
+        &__item
+            display: flex
+            justify-content: space-between
+            color: $text-main
+            margin-bottom: 10px
+            &_economical
+                color: $pink
+        &__price
+            &_sale
+                position: relative
+                &::after
+                    position: absolute
+                    content: ''
+                    height: 1px
+                    width: 39px
+                    background-color: $text-main
+                    top: 60%
+                    left: 0
+        &__list
+            margin-bottom: 40px
+            &_economical
+                margin-top: 10px
+                margin-bottom: 0
+                & > .modal-shopping__item
+                    margin-bottom: 5px
+    &-profile
+        width: 100%
+        max-width: 250px
+        &__personal-area
+            display: block
+            margin-bottom: 20px
+        & > a, & * a
+            color: $text-main
+        & * a
+            text-decoration: none
