@@ -61,6 +61,22 @@ $('[data-show="apply"]').on('click', function () {
     $('.modal-apply').addClass('modal-apply_active')
 });
 
+$('[data-show="category"]').on('click', function () {
+    $('.category-show').toggleClass('category-show_active')
+});
+
+$('[data-show="size"]').on('click', function () {
+    $('.size-show').toggleClass('size-show_active')
+});
+
+$('[data-show="color"]').on('click', function () {
+    $('.color-show').toggleClass('color-show_active')
+});
+
+$('[data-show="sort"]').on('click', function () {
+    $('.sort-show').toggleClass('sort-show_active')
+});
+
 $(window).on('click', function (event) {
     if (event.target == $('.modal-profile-overlay_active')[0]) {
         $('.modal-profile-overlay').removeClass('modal-profile-overlay_active')
@@ -68,6 +84,18 @@ $(window).on('click', function (event) {
     }
     if (event.target == $('.modal-apply')[0]) {
         $('.modal-apply').removeClass('modal-apply_active')
+    }
+    if (event.target !== $('.category-show')[0] && event.target !== $('[data-show="category"]')[0]) {
+        $('.category-show').removeClass('category-show_active')
+    }
+    if (event.target !== $('.size-show')[0] && event.target !== $('[data-show="size"]')[0]) {
+        $('.size-show').removeClass('size-show_active')
+    }
+    if (event.target !== $('.color-show')[0] && event.target !== $('[data-show="color"]')[0]) {
+        $('.color-show').removeClass('color-show_active')
+    }
+    if (event.target !== $('.sort-show')[0] && event.target !== $('[data-show="sort"]')[0]) {
+        $('.sort-show').removeClass('sort-show_active')
     }
 })
 

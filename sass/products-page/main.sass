@@ -1,0 +1,153 @@
+.products-page
+    &__main-title
+        text-align: center
+        margin-bottom: 0
+    &__title
+        margin-bottom: 50px
+    &-nav
+        display: flex
+        justify-content: space-between
+        width: 90%
+        margin: auto
+        margin-bottom: 100px
+        &__leftside
+            & > button
+                margin-right: 35px
+    &__product-select
+        background-color: transparent
+        border: 0
+        position: relative
+        &::after, &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: -20px
+            background-color: $gray
+            width: 8px
+            height: 1px
+            transform: rotate(45deg) translateY(-50%)
+        &::before
+            left: -14px
+            transform: rotate(-45deg) translateY(-50%)
+.catalog-block
+    &_theme2
+        max-width: 1400px
+        & * .catalog-card__image
+            border: 1px solid $gray
+            border-radius: 3px
+        & * .catalog-card-hover__read-more
+            background-color: rgba(222,203,196,.8)
+            color: #fff
+        & * .catalog-card
+            zoom: 1
+.products
+    &-pagination
+        display: flex
+        align-items: center
+        list-style: none
+        justify-content: flex-end
+        margin-right: 5%
+        margin-bottom: 50px
+        & * a
+            color: $text-main
+            text-decoration: none
+            font-size: 30px
+        &__item
+            margin-right: 10px
+button[data-show="category"]
+    position: relative
+.category-show, .size-show, .color-show, .sort-show
+    position: absolute
+    top: 30px
+    left: -20px
+    text-align-last: left
+    width: 230px
+    background-color: #fff
+    box-shadow: 6px 6px 6px $gray
+    padding: 20px
+    visibility: hidden
+    opacity: 0
+    transition: .5s
+    z-index: 999
+    overflow-y: scroll
+    max-height: 240px
+    &_active
+        visibility: visible
+        opacity: 1
+    &__list
+        margin-left: 10px
+        list-style: none
+    &__link
+        color: $text-main
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+.size-show, .color-show, .sort-show
+    overflow: hidden
+    max-height: none
+    &__list
+        list-style: none
+        margin-left: 10px
+    &__title
+        margin-bottom: 10px
+.color
+    &-box
+        border: 1px solid $gray
+        height: 50px
+        width: 50px
+        display: flex
+        margin-right: 10px
+        &_white
+            background-color: $white
+        &_black
+            background-color: black
+        &_red
+            background-color: red
+    &-show
+        &__list
+            display: flex
+.sort-show
+    left: -150%
+    width: 240px
+@media ( max-width: 1300px )
+    .catalog-block
+        &_theme2
+            & > .catalog-block__line
+                flex-direction: column
+                align-items: center
+            & * .catalog-card
+                margin-bottom: 20px
+@media ( max-width: 992px )
+    .catalog-block
+        &_theme2
+            display: block !important
+@media (max-width: 600px)
+    .products-page-nav
+        width: 80%
+        align-items: center
+    .catalog-block
+        &_theme2
+            & > .catalog-block__line:last-child
+                display: flex !important
+            & .catalog-card:nth-child(n+2)
+                display: flex !important
+@media ( max-width: 500px )
+    .catalog-block
+        &_theme2
+            & * .catalog-card
+                &__image
+                    max-width: 280px
+    .products-page-nav
+        flex-direction: column
+        align-items: flex-start
+        &__leftside
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            & button
+                margin-bottom: 30px
+                margin-right: 0
+    .sort-show
+        left: -20px
+    .products-page-nav
+        width: 50%
