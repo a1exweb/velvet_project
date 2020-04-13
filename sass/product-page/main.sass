@@ -1,0 +1,128 @@
+.product-page
+    position: relative
+    overflow: hidden
+    &__circle
+        position: absolute
+        display: flex
+        width: px-to-rem(800px)
+        height: px-to-rem(800px)
+        background-color: $beige
+        border-radius: 50%
+        right: -30%
+        z-index: -1
+
+    &__title
+        margin-bottom: 80px
+    &__block-product
+        display: flex
+        margin-bottom: 100px
+        justify-content: center
+    &__image
+        &-big
+            max-width: 750px
+            border: 1px solid $gray
+        &-small
+            max-width: 250px
+            border: 1px solid $gray
+            margin-right: 16px
+            margin-top: 16px
+            &:last-child
+                margin-right: 0
+    &__leftside
+        margin-right: 60px
+    &__product
+        &-title
+            font-size: 40px
+            font-weight: normal
+            margin-bottom: 40px
+        &-text
+            max-width: 400px
+            margin-bottom: 30px
+        &-select
+            display: block
+            border: 0
+            border-bottom: 1px solid $gray
+            padding-bottom: 20px
+            font-size: px-to-rem(35px)
+            width: 100%
+            text-align-last: left
+            background-color: transparent
+            position: relative
+            margin-bottom: 20px
+            &::after, &::before
+                position: absolute
+                content: ''
+                width: 10px
+                height: 1px
+                background-color: $gray
+                right: -20px
+                top: 50%
+                transform: rotate(45deg) translateY(-50%)
+            &::before
+                right: -28px
+                transform: rotate(-45deg) translateY(-50%)
+    &__block-buttons
+        display: flex
+        justify-content: center
+        margin-top: 70px
+        margin-bottom: 50px
+    &__price
+        display: flex
+        font-size: px-to-rem(35px)
+        &-text
+            margin-right: 5px
+    &__button
+        background-color: transparent
+        border: 0
+        font-size: 27px
+        margin-right: 10px
+        &-apply
+            margin-top: 70px
+            background-color: rgba($beige, .55)
+            border: 0
+            border-radius: 2px
+            color: $white
+            padding: 20px 30px
+            width: 100%
+            max-width: 400px
+            font-size: px-to-rem(35px)
+            transition: .2s
+            &:hover
+                background-color: rgba($beige, 1)
+@media ( max-width: 1500px )
+    .product-page
+        &__block-product
+            flex-direction: column
+            align-items: center
+        &__leftside
+            margin-right: 0
+            display: flex
+            flex-direction: column
+            align-items: center
+@media ( max-width: 800px )
+    .product-page
+        &__image
+            &-big
+                max-width: 500px
+            &-small
+                max-width: 154px
+@media ( max-width: 600px )
+    .product-page
+        &__image
+            &-big
+                max-width: 400px
+            &-small
+                max-width: 120px
+@media ( max-width: 500px )
+    .product-page
+        &__price
+            font-size: 16px
+        &__rightside
+            max-width: 250px
+        &__button-apply
+            font-size: 20px
+        &__image
+            &-big
+                max-width: 300px
+            &-small
+                max-width: 88px
