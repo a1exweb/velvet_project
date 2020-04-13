@@ -1,0 +1,66 @@
+.personal-area
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 80px
+    &__main-title
+        text-align: center
+        margin-bottom: 0
+    &__title
+        margin-bottom: 50px
+    &__table
+        &-data
+            & * th
+                text-align: left
+.personal
+    &-table
+        width: 90%
+        max-width: 700px
+        &__content
+            border: 1px solid $gray
+        &__header
+            display: flex
+            justify-content: space-between
+            background-color: $pink
+            padding: 5px 10px
+            & * a, & *
+                color: $text-main
+        &__function
+            display: block
+            margin-top: 15px
+            margin-bottom: 15px
+            margin-left: 20px
+            color: $text-main
+        &__table-data
+            padding-left: 20px
+            width: 100%
+            & * th
+                text-align: left
+            & * td, & * th
+                padding-top: 20px
+                padding-bottom: 20px
+.personal-table:nth-child(3)
+    & * .personal-table__function
+        margin-top: 30px
+        margin-bottom: 30px
+.personal-help
+    &__title
+        margin-top: 40px
+    &__subtitle
+        font-weight: normal
+        margin-bottom: 40px
+    &__link
+        display: flex
+        justify-content: space-between
+        align-items: center
+        color: $text-main
+        text-decoration: none
+        border: 1px solid $gray
+        padding: 10px 50px
+        font-size: 25px
+        & * i
+            font-size: 35px
+    &__icon-arrow
+        background-color: rgba($pink, .5)
+        padding: 20px
+        border-radius: 50%

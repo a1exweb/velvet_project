@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Личный кабинет</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-pro-5.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+</head>
+
+<body>
+    <div class="menu-mobile">
+        <div class="menu-mobile__up">
+            <button data-close="mobile-menu"></button>
+            <div class="menu-mobile__buttons">
+                <button class="menu-mobile__button" data-show="like"><i class="far fa-heart white-color"></i></button>
+                <button class="menu-mobile__button" data-show="shopping"><i
+                        class="far fa-shopping-cart white-color"></i></button>
+            </div>
+        </div>
+
+        <ul class="mobile-list">
+            <li class="mobile-list__item"><button class="menu-mobile__button" data-show="profile"><i
+                        class="far fa-user-circle  white-color"></i> <span>Личный кабинет</span></button></li>
+            <li class="mobile-list__item"><a href="#" class="mobile-list__link">Главная</a></li>
+            <li class="mobile-list__item"><a href="#" class="mobile-list__link">Каталог</a></li>
+            <li class="mobile-list__item"><a href="#" class="mobile-list__link">О нас</a></li>
+            <li class="mobile-list__item"><a href="#" class="mobile-list__link">LookBook</a></li>
+            <li class="mobile-list__item"><a href="#" class="mobile-list__link">Партнерам</a></li>
+            <li class="mobile-list__item"><a href="#" class="mobile-list__link">Контакты</a></li>
+        </ul>
+    </div>
+
+    <ul class="container">
+        <header class="header header_default">
+            <button data-show="mobile-menu" class="header-menu-burger"><i class="fa fa-align-justify"
+                    aria-hidden="true"></i></button>
+
+            <a href="#" class="logo-link"><span class="logo">velvet</span><span class="logo__description">fashion
+                    studio</span></a>
+
+            <ul class="header-menu">
+                <li class="header-menu__item"><a href="./index.html" class="header-menu__link">Главная</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Каталог</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">О нас</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">LookBook</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Партнерам</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+            </ul>
+            <a href="tel:+79281431030" class="header__phone-link"><span class="header__phone">+7(928)-143-10-30</span><i
+                    class="far fa-phone main-color"></i></a>
+            <div class="header-rightsidebar header-rightsidebar_default">
+                <form action="#" class="header-rightsidebar__search-form">
+                    <input type="search" class="header-rightsidebar__search">
+                    <button class="header-rightsidebar__search-button"><i
+                            class="far fa-search white-color"></i></button>
+                </form>
+                <button class="header-rightsidebar__button header-rightsidebar__button_buy" data-show="shopping"><i
+                        class="far fa-shopping-cart white-color"></i></button>
+                <button class="header-rightsidebar__button header-rightsidebar__button_like" data-show="like"><i
+                        class="far fa-heart white-color"></i></button>
+                <button class="header-rightsidebar__button header-rightsidebar__button_profile" data-show="profile"><i
+                        class="far fa-user-circle  white-color"></i></button>
+            </div>
+        </header>
+        <main class="main personal-area">
+            <h1 class="main__title personal-area__main-title">VELVET FASHION STUDIO</h1>
+            <h2 class="title personal-area__title">Личный кабинет</h2>
+
+            <div class="personal-table">
+                <div class="personal-table__header">
+                    <h3 class="personal-table__title">Мои данные</h3>
+                    <a href="#" class="personal-table__link">Редактировать</a>
+                </div>
+                <div class="personal-table__content">
+
+                    <table class="personal-table__table-data">
+                        <tr>
+                            <td>Имя</td>
+                            <td>Иван</td>
+                        </tr>
+                        <tr>
+                            <td>Фамилия</td>
+                            <td>Иванов</td>
+                        </tr>
+                        <tr>
+                            <td>Дата рождения</td>
+                            <td>01.01.2000</td>
+                        </tr>
+                        <tr>
+                            <td>Электронная почта</td>
+                            <td>....@mail.ru</td>
+                        </tr>
+                        <tr>
+                            <td>Ваш номер</td>
+                            <td>8(900)-800-70-70</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="personal-table__header">
+                    <h3 class="personal-table__title">Мои заказы</h3>
+                </div>
+                <div class="personal-table__content">
+
+                    <table class="personal-table__table-data">
+                        <tr>
+                            <th>Заказ</th>
+                            <th>Дата заказа</th>
+                            <th>Статус</th>
+                            <th>Сумма</th>
+                        </tr>
+                        <tr>
+                            <td>№ 00000</td>
+                            <td>01.01.2020</td>
+                            <td>закрыт</td>
+                            <td>1000р.</td>
+                        </tr>
+                        <tr>
+                            <td>№ 00000</td>
+                            <td>01.01.2020</td>
+                            <td>закрыт</td>
+                            <td>1000р.</td>
+                        </tr>
+                        <tr>
+                            <td>№ 00000</td>
+                            <td>01.01.2020</td>
+                            <td>закрыт</td>
+                            <td>1000р.</td>
+                        </tr>
+                        <tr>
+                            <td>№ 00000</td>
+                            <td>01.01.2020</td>
+                            <td>закрыт</td>
+                            <td>1000р.</td>
+                        </tr>
+                        <tr>
+                            <td>№ 00000</td>
+                            <td>01.01.2020</td>
+                            <td>закрыт</td>
+                            <td>1000р.</td>
+                        </tr>
+                        <tr>
+                            <td>№ 00000</td>
+                            <td>01.01.2020</td>
+                            <td>закрыт</td>
+                            <td>1000р.</td>
+                        </tr>
+                        <tr>
+                            <td>№ 00000</td>
+                            <td>01.01.2020</td>
+                            <td>закрыт</td>
+                            <td>1000р.</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="personal-table__header">
+                    <h3 class="personal-table__title">Адрес доставки</h3>
+                    <a href="#" class="personal-table__link">Редактировать</a>
+                </div>
+                <div class="personal-table__content">
+                    <a href="#" class="personal-table__function">Добавить адрес достваки</a>
+                </div>
+
+                <div class="personal-table__header">
+                    <h3 class="personal-table__title">Конфиденциальность</h3>
+                </div>
+                <div class="personal-table__content">
+                    <a href="#" class="personal-table__function">Изменить пароль</a>
+                    <a href="#" class="personal-table__function">Удалить аккаунт</a>
+                </div>
+            </div>
+
+            <section class="personal-help">
+                <h2 class="title personal-help__title">Нужна помощь?</h2>
+                <h3 class="subtitle personal-help__subtitle">Напиши нам и мы обязательно тебе перезвоним!</h3>
+
+                <a href="mailto:velvet_fashion@mail.ru" class="personal-help__link">
+                    <span class="personal-help__label">Написать</span>
+                    <div class="personal-help__icon-arrow">
+                        <i class="fal fa-arrow-right"></i>
+                    </div>
+                </a>
+            </section>
+        </main>
+
+        
+
+        <footer class="footer">
+            <div class="footer__block">
+                <div class="footer__row">
+                    <a href="#" class="logo-link"><span class="logo">velvet</span><span
+                            class="logo__description">fashion
+                            studio</span></a>
+                    <div class="block-icons">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__row">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Главная</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Каталог</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__row">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">О нас</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Партнерам</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Доставка</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__row">
+                    <span class="footer__title-contacts">Контакты</span>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a href="tel:+79281431030" class="footer-menu__link"><i
+                                    class="far fa-phone white-color"></i>+7(928)-143-10-30</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="mailto:velvet_fashion@mail.ru" class="footer-menu__link"><i
+                                    class="fal fa-envelope"></i>velvet_fashion@mail.ru</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link footer__location"><i
+                                    class="fal fa-map-marker"></i><span
+                                    class="footer__location-text">Ростов-на-Дону,<br> ул. М. Горького, 151</span></a>
+                        </li>
+                    </ul>
+
+                    <div class="block-icons">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__undertext">
+                <span class="footer__copy">&copy;<sub class="footer__year">2020</sub></span>
+                <a href="#" class="footer__privacy">Политика конфидециальности</a>
+            </p>
+        </footer>
+
+        <div class="modal-apply">
+            <div class="modal-apply__form">
+                <div class="modal-apply__form">
+                    <h3 class="modal-apply__title">Создать заявку</h3>
+                    <input type="text" class="modal-apply__input" placeholder="Имя">
+                    <input type="text" class="modal-apply__input" placeholder="Email">
+                    <input type="text" class="modal-apply__input" placeholder="Номер телефона">
+                    <textarea name="modal-apply-textarea" id="modal-apply-textarea" cols="30" rows="5" class="modal-apply__textarea" placeholder="Введите сообщение"></textarea>
+                    <button class="modal-apply__button">Отправить заявку</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-shopping-overlay">
+            <div class="modal-rightsidebar modal-shopping">
+                <h3 class="modal-shopping__title">Ваша корзина пуста</h3>
+                <ul class="modal-shopping__list">
+                    <li class="modal-shopping__item">
+                        Стоимость<span class="modal-shopping__price">0 руб.</span>
+                    </li>
+                    <li class="modal-shopping__item">
+                        ИТОГО<span class="modal-shopping__price">0 руб.</span>
+                    </li>
+                </ul>
+                <h4 class="modal-shopping__subtitle">Купи еще 2 шт. и сэконьте 10%</h4>
+                <ul class="modal-shopping__list modal-shopping__list_economical">
+                    <li class="modal-shopping__item">
+                        Стоимость<span class="modal-shopping__price modal-shopping__price_sale">0 руб.</span>
+                    </li>
+                    <li class="modal-shopping__item">
+                        ИТОГО<span class="modal-shopping__price">0 руб.</span>
+                    </li>
+                    <li class="modal-shopping__item modal-shopping__item_economical">
+                        Экономия<span class="modal-shopping__price">0 руб.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal-profile-overlay">
+            <div class="modal-rightsidebar modal-profile">
+                <a href="#" class="modal-profile__personal-area">Личный кабинет</a>
+                <span class="modal-profile__functions">
+                    <a href="#" class="modal-profile__login">Вход</a>/<a href="#" class="modal-profile__exit">Выход</a>
+                </span>
+            </div>
+        </div>
+        <script src="js/all.min.js"></script>
+</body>
+
+</html>
