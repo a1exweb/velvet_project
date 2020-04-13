@@ -56,10 +56,18 @@ $('[data-show="profile"]').on('click', function () {
     $('.modal-profile-overlay').addClass('modal-profile-overlay_active')
 });
 
+
+$('[data-show="apply"]').on('click', function () {
+    $('.modal-apply').addClass('modal-apply_active')
+});
+
 $(window).on('click', function (event) {
     if (event.target == $('.modal-profile-overlay_active')[0]) {
         $('.modal-profile-overlay').removeClass('modal-profile-overlay_active')
         $('.modal-profile').removeClass('modal-profile_active')
+    }
+    if (event.target == $('.modal-apply')[0]) {
+        $('.modal-apply').removeClass('modal-apply_active')
     }
 })
 
