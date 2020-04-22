@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Заголовок</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-pro-5.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+</head>
+
+<body>
+    <div class="menu-mobile">
+        <div class="menu-mobile__up">
+            <button data-close="mobile-menu"></button>
+            <div class="menu-mobile__buttons">
+                <button class="menu-mobile__button" data-show="like"><i class="far fa-heart white-color"></i></button>
+                <button class="menu-mobile__button" data-show="shopping"><i
+                        class="far fa-shopping-cart white-color"></i></button>
+            </div>
+        </div>
+
+        <ul class="mobile-list">
+            <li class="mobile-list__item"><button class="menu-mobile__button" data-show="profile"><i
+                        class="far fa-user-circle  white-color"></i> <span>Личный кабинет</span></button></li>
+            <li class="mobile-list__item"><a href="./index.html" class="mobile-list__link">Главная</a></li>
+            <li class="mobile-list__item"><a href="./catalog-girl.html" class="mobile-list__link">Каталог</a></li>
+            <li class="mobile-list__item"><a href="./index.html#about" class="mobile-list__link">О нас</a></li>
+            <li class="mobile-list__item"><a href="./LookBook.html" class="mobile-list__link">LookBook</a></li>
+            <li class="mobile-list__item"><a href="./partners.html" class="mobile-list__link">Партнерам</a></li>
+            <li class="mobile-list__item"><a href="#footer" class="mobile-list__link">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <button data-show="mobile-menu" class="header-menu-burger"><i class="fa fa-align-justify"
+                    aria-hidden="true"></i></button>
+
+            <a href="#" class="logo-link"><span class="logo">velvet</span><span class="logo__description">fashion
+                    studio</span></a>
+
+            <ul class="header-menu">
+                <li class="header-menu__item"><a href="./index.html" class="header-menu__link">Главная</a></li>
+                <li class="header-menu__item"><a href="./catalog-girl.html" class="header-menu__link">Каталог</a></li>
+                <li class="header-menu__item"><a href="./index.html#about" class="header-menu__link">О нас</a></li>
+                <li class="header-menu__item"><a href="./LookBook.html" class="header-menu__link">LookBook</a></li>
+                <li class="header-menu__item"><a href="./partners.html" class="header-menu__link">Партнерам</a></li>
+                <li class="header-menu__item"><a href="#footer" class="header-menu__link">Контакты</a></li>
+            </ul>
+            <a href="tel:+79281431030" class="header__phone-link"><span class="header__phone">+7(928)-143-10-30</span><i
+                    class="far fa-phone main-color"></i></a>
+            <div class="header-rightsidebar">
+                <form action="#" class="header-rightsidebar__search-form">
+                    <input type="search" class="header-rightsidebar__search">
+                    <button class="header-rightsidebar__search-button"><i
+                            class="far fa-search white-color"></i></button>
+                </form>
+                <button class="header-rightsidebar__button header-rightsidebar__button_buy" data-show="shopping"><i
+                        class="far fa-shopping-cart white-color"></i></button>
+                <button class="header-rightsidebar__button header-rightsidebar__button_like" data-show="like"><i
+                        class="far fa-heart white-color"></i></button>
+                <button class="header-rightsidebar__button header-rightsidebar__button_profile" data-show="profile"><i
+                        class="far fa-user-circle  white-color"></i></button>
+            </div>
+        </header>
+        <div id="account-register" class="container wrapper-personal-area">
+            <ul class="breadcrumb">
+                <li><a href="http://velet.yourocket.ru/"><i class="fa fa-home"></i></a></li>
+                <li><a href="http://velet.yourocket.ru/my-account">Личный Кабинет</a></li>
+                <li><a href="http://velet.yourocket.ru/create-account">Регистрация</a></li>
+            </ul>
+            <div class="row">
+                <div id="content" class="col-sm-9">
+                    <h1>Регистрация</h1>
+                    <p>Если Вы уже зарегистрированы, перейдите на страницу <a
+                            href="http://velet.yourocket.ru/login">авторизации</a>.</p>
+                    <form action="http://velet.yourocket.ru/create-account" method="post" enctype="multipart/form-data"
+                        class="form-horizontal form-default">
+                        <fieldset id="account">
+                            <legend>Основные данные</legend>
+                            <div class="form-group required" style="display:  none ;">
+                                <label class="col-sm-2 control-label">Направление бизнеса</label>
+                                <div class="col-sm-10">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="customer_group_id" value="1" checked="checked" />
+                                            Default</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-firstname">Имя</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="firstname" value="" placeholder="Имя" id="input-firstname"
+                                        class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-lastname">Фамилия</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="lastname" value="" placeholder="Фамилия"
+                                        id="input-lastname" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-email">E-Mail</label>
+                                <div class="col-sm-10">
+                                    <input type="email" name="email" value="" placeholder="E-Mail" id="input-email"
+                                        class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-telephone">Телефон</label>
+                                <div class="col-sm-10">
+                                    <input type="tel" name="telephone" value="" placeholder="Телефон"
+                                        id="input-telephone" class="form-control" />
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Ваш пароль</legend>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-password">Пароль</label>
+                                <div class="col-sm-10">
+                                    <input type="password" name="password" value="" placeholder="Пароль"
+                                        id="input-password" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-confirm">Подтверждение пароля</label>
+                                <div class="col-sm-10">
+                                    <input type="password" name="confirm" value="" placeholder="Подтверждение пароля"
+                                        id="input-confirm" class="form-control" />
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Рассылка новостей</legend>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Подписка на новости</label>
+                                <input id="radio-yes" type="radio" name="newsletter" value="1" />
+                                <label for="radio-yes" class="radio-inline">Да</label>
+                                <input id="radio-no" type="radio" name="newsletter" value="0" checked="checked" />
+                                <label for="radio-no" class="radio-inline">Нет</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="buttons">
+                            <div class="pull-right">
+                                <input type="checkbox" id="agree" name="agree" value="1" />
+                                <label class="policy-label" for="agree">
+                                    Я прочитал <a
+                                        href="http://velet.yourocket.ru/index.php?route=information/information/agree&amp;information_id=3"
+                                        class="agree"><b>Партнерам</b></a> и согласен с <br /> условиями безопасности и
+                                    обработки персональных данных
+                                </label>
+                            </div>
+
+                            &nbsp;
+                            <input type="submit" value="Продолжить" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+                <aside id="column-right" class="col-sm-3 hidden-xs">
+                    <div class="list-group">
+                        <a href="http://velet.yourocket.ru/login" class="list-group-item">Вход</a> <a
+                            href="http://velet.yourocket.ru/create-account" class="list-group-item">Регистрация</a> <a
+                            href="http://velet.yourocket.ru/forgot-password" class="list-group-item">Забыли пароль?</a>
+                        <a href="http://velet.yourocket.ru/my-account" class="list-group-item">Моя информация</a>
+                        <a href="http://velet.yourocket.ru/address-book" class="list-group-item">Адресная книга</a> <a
+                            href="http://velet.yourocket.ru/wishlist" class="list-group-item">Закладки</a> <a
+                            href="http://velet.yourocket.ru/order-history" class="list-group-item">История заказов</a>
+                        <a href="http://velet.yourocket.ru/downloads" class="list-group-item">Файлы для скачивания</a><a
+                            href="http://velet.yourocket.ru/recurring" class="list-group-item">Регулярные платежи</a> <a
+                            href="http://velet.yourocket.ru/reward-points" class="list-group-item">Бонусные баллы</a> <a
+                            href="http://velet.yourocket.ru/returns" class="list-group-item">Возвраты</a> <a
+                            href="http://velet.yourocket.ru/transactions" class="list-group-item">История транзакций</a>
+                        <a href="http://velet.yourocket.ru/newsletter" class="list-group-item">E-Mail рассылка</a>
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        <!--
+        // Sort the custom fields
+        $('#account .form-group[data-sort]').detach().each(function () {
+            if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#account .form-group')
+                .length) {
+                $('#account .form-group').eq($(this).attr('data-sort')).before(this);
+            }
+
+            if ($(this).attr('data-sort') > $('#account .form-group').length) {
+                $('#account .form-group:last').after(this);
+            }
+
+            if ($(this).attr('data-sort') == $('#account .form-group').length) {
+                $('#account .form-group:last').after(this);
+            }
+
+            if ($(this).attr('data-sort') < -$('#account .form-group').length) {
+                $('#account .form-group:first').before(this);
+            }
+        });
+
+        $('input[name=\'customer_group_id\']').on('change', function () {
+            $.ajax({
+                url: 'index.php?route=account/register/customfield&customer_group_id=' + this.value,
+                dataType: 'json',
+                success: function (json) {
+                    $('.custom-field').hide();
+                    $('.custom-field').removeClass('required');
+
+                    for (i = 0; i < json.length; i++) {
+                        custom_field = json[i];
+
+                        $('#custom-field' + custom_field['custom_field_id']).show();
+
+                        if (custom_field['required']) {
+                            $('#custom-field' + custom_field['custom_field_id']).addClass(
+                                'required');
+                        }
+                    }
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                }
+            });
+        });
+
+        $('input[name=\'customer_group_id\']:checked').trigger('change');
+        //
+        -->
+    </script>
+    <script type="text/javascript">
+        <!--
+        $('button[id^=\'button-custom-field\']').on('click', function () {
+            var element = this;
+
+            $('#form-upload').remove();
+
+            $('body').prepend(
+                '<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>'
+                );
+
+            $('#form-upload input[name=\'file\']').trigger('click');
+
+            if (typeof timer != 'undefined') {
+                clearInterval(timer);
+            }
+
+            timer = setInterval(function () {
+                if ($('#form-upload input[name=\'file\']').val() != '') {
+                    clearInterval(timer);
+
+                    $.ajax({
+                        url: 'index.php?route=tool/upload',
+                        type: 'post',
+                        dataType: 'json',
+                        data: new FormData($('#form-upload')[0]),
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        beforeSend: function () {
+                            $(element).button('loading');
+                        },
+                        complete: function () {
+                            $(element).button('reset');
+                        },
+                        success: function (json) {
+                            $(element).parent().find('.text-danger').remove();
+
+                            if (json['error']) {
+                                $(node).parent().find('input').after(
+                                    '<div class="text-danger">' + json['error'] +
+                                    '</div>');
+                            }
+
+                            if (json['success']) {
+                                alert(json['success']);
+
+                                $(element).parent().find('input').val(json['code']);
+                            }
+                        },
+                        error: function (xhr, ajaxOptions, thrownError) {
+                            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr
+                                .responseText);
+                        }
+                    });
+                }
+            }, 500);
+        });
+        //
+        -->
+    </script>
+    <script type="text/javascript">
+        <!--
+        $('.date').datetimepicker({
+            language: 'ru',
+            pickTime: false
+        });
+
+        $('.time').datetimepicker({
+            language: 'ru',
+            pickDate: false
+        });
+
+        $('.datetime').datetimepicker({
+            language: 'ru',
+            pickDate: true,
+            pickTime: true
+        });
+        //
+        -->
+    </script>
+    <footer class="footer" id="footer">
+        <div class="footer__block">
+            <div class="footer__row">
+                <a href="#" class="logo-link"><span class="logo">velvet</span><span class="logo__description">fashion
+                        studio</span></a>
+                <div class="block-icons">
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__row">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a href="./index.html" class="footer-menu__link">Главная</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="./catalog-girl.html" class="footer-menu__link">Каталог</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="./personal-area.html" class="footer-menu__link">Личный кабинет</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__row">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a href="./index.html#about" class="footer-menu__link">О нас</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="./partners.html" class="footer-menu__link">Партнерам</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">Доставка</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__row">
+                <span class="footer__title-contacts">Контакты</span>
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a href="tel:+79281431030" class="footer-menu__link"><i
+                                class="far fa-phone white-color"></i>+7(928)-143-10-30</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="mailto:velvet_fashion@mail.ru" class="footer-menu__link"><i
+                                class="fal fa-envelope"></i>velvet_fashion@mail.ru</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link footer__location"><i class="fal fa-map-marker"></i><span
+                                class="footer__location-text">Ростов-на-Дону,<br> ул. М. Горького, 151</span></a>
+                    </li>
+                </ul>
+
+                <div class="block-icons">
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__undertext">
+            <span class="footer__copy">&copy;<sub class="footer__year">2020</sub></span>
+            <a href="#" class="footer__privacy">Политика конфидециальности</a>
+        </p>
+    </footer>
+
+    <div class="modal-shopping-overlay">
+        <div class="modal-rightsidebar modal-shopping">
+            <h3 class="modal-shopping__title">Ваша корзина пуста</h3>
+            <ul class="modal-shopping__list">
+                <li class="modal-shopping__item">
+                    Стоимость<span class="modal-shopping__price">0 руб.</span>
+                </li>
+                <li class="modal-shopping__item">
+                    ИТОГО<span class="modal-shopping__price">0 руб.</span>
+                </li>
+            </ul>
+            <h4 class="modal-shopping__subtitle">Купи еще 2 шт. и сэконьте 10%</h4>
+            <ul class="modal-shopping__list modal-shopping__list_economical">
+                <li class="modal-shopping__item">
+                    Стоимость<span class="modal-shopping__price modal-shopping__price_sale">0 руб.</span>
+                </li>
+                <li class="modal-shopping__item">
+                    ИТОГО<span class="modal-shopping__price">0 руб.</span>
+                </li>
+                <li class="modal-shopping__item modal-shopping__item_economical">
+                    Экономия<span class="modal-shopping__price">0 руб.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-profile-overlay">
+        <div class="modal-rightsidebar modal-profile">
+            <a href="./personal-area.html" class="modal-profile__personal-area">Личный кабинет</a>
+            <span class="modal-profile__functions">
+                <a href="#" class="modal-profile__login">Вход</a>/<a href="#" class="modal-profile__exit">Выход</a>
+            </span>
+        </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-#account-login
+.wrapper-personal-area
     display: flex
     flex-direction: column
     max-width: 900px
@@ -43,10 +43,17 @@
     margin-bottom: 20px
 .login-title-form
     margin-bottom: 10px
-.login-form
-    margin-bottom: 20px
+.form-default
     display: flex
     flex-direction: column
+    align-items: center
+    width: 100%
+    margin: auto
+    margin-bottom: 20px
+    fieldset
+        min-width: 250px
+        border: 2px solid $pink
+        color: darken($text-main, 50%)
     label
         text-align: left
         display: block
@@ -60,8 +67,62 @@
         margin-top: 10px
     .btn
         margin-top: 10px
+    .agree
+        display: inline
+    .pull-right
+        margin-top: 10px
+        max-width: 280px
+    input[type="submit"]
+        margin: auto
+        margin-top: 10px
+
+.policy-label
+    position: relative
+    text-align: center !important
+    &::after
+        margin-left: 5px
+        position: absolute
+        content: '\2713'
+        font-size: 15px
+        text-align: center
+        line-height: 15px
+        border: 1px solid $pink
+        color: transparent
+        width: 15px
+        height: 15px
+        display: inline-flex
+        justify-content: center
+        border-radius: 2px
+        cursor: pointer
+input[type="checkbox"]
+        display: none
+input[type="checkbox"]:checked + .policy-label::after
+    color: $pink
+.radio-inline
+    position: relative
+    margin-left: 25px
+    &::before
+        left: -25px
+        position: absolute
+        content: '\2713'
+        font-size: 15px
+        text-align: center
+        line-height: 15px
+        border: 1px solid $pink
+        color: transparent
+        width: 15px
+        height: 15px
+        display: inline-flex
+        justify-content: center
+        border-radius: 2px
+        cursor: pointer
+input[type="radio"]
+    display: none
+input[type="radio"]:checked + .radio-inline::before
+    color: $pink
+
 @media ( max-width: 1400px )
-    #account-login
+    .wrapper-personal-area
         & .list-group
             max-width: 250px
     
