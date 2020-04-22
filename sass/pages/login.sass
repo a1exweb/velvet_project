@@ -1,0 +1,67 @@
+#account-login
+    display: flex
+    flex-direction: column
+    max-width: 900px
+    margin: auto
+    text-align: center
+    & h1
+        text-align: center
+    & * a
+        color: $text-main
+    & .list-group
+        display: flex
+        flex-wrap: wrap
+        max-width: 350px
+        margin: auto
+        margin-bottom: 80px
+        & a
+            display: flex
+            width: 50%
+            margin-bottom: 5px
+.breadcrumb
+    list-style: none
+.well
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin-top: 20px
+    & h2
+        margin-bottom: 20px
+.btn
+    display: flex
+    justify-content: center
+    width: 100%
+    max-width: 200px
+    padding: 10px 30px
+    color: $white !important
+    text-decoration: none
+    background-color: $pink
+    border: 0
+    cursor: pointer
+.description-registration
+    margin-top: 10px
+    margin-bottom: 20px
+.login-title-form
+    margin-bottom: 10px
+.login-form
+    margin-bottom: 20px
+    display: flex
+    flex-direction: column
+    label
+        text-align: left
+        display: block
+        margin-top: 10px
+    & input
+        border: 0
+        border-bottom: 1px solid $pink
+        padding: 10px 20px
+    a
+        display: block
+        margin-top: 10px
+    .btn
+        margin-top: 10px
+@media ( max-width: 1400px )
+    #account-login
+        & .list-group
+            max-width: 250px
+    

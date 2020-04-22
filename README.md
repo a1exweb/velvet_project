@@ -4,3 +4,4 @@
 <a href="https://a1exweb.github.io/velvet_project/build/partners.html">Партнерам</a>
 <a href="https://a1exweb.github.io/velvet_project/build/product-page.html">Карточка товара</a>
 <a href="https://a1exweb.github.io/velvet_project/build/personal-area.html">Личный кабинет</a>
+<a href="https://a1exweb.github.io/velvet_project/build/login.html">Логин</a>
