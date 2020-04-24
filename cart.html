@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -67,39 +68,12 @@
                         class="far fa-user-circle  white-color"></i></button>
             </div>
         </header>
-<div id="checkout-cart" class="container">
+<div id="checkout-cart" class="container wrapper-personal-area cart-page">
     <ul class="breadcrumb">
           <li><a href="http://velet.yourocket.ru/"><i class="fa fa-home"></i></a></li>
           <li><a href="http://velet.yourocket.ru/cart">Корзина покупок</a></li>
         </ul>
-          <div class="row">
-                  <div id="content" class="col-sm-12"><!--<div class="swiper-viewport">
-    <div id="slideshow0" class="swiper-container">
-      <div class="swiper-wrapper">       <div class="swiper-slide text-center"><a href="index.php?route=product/product&amp;path=57&amp;product_id=49"><img src="http://velet.yourocket.ru/image/cache/catalog/demo/banners/iPhone6-1140x380.jpg" alt="iPhone 6" class="img-responsive" /></a></div>
-              <div class="swiper-slide text-center"><img src="http://velet.yourocket.ru/image/cache/catalog/demo/banners/MacBookAir-1140x380.jpg" alt="MacBookAir" class="img-responsive" /></div>
-         </div>
-    </div>
-    <div class="swiper-pagination slideshow0"></div>
-    <div class="swiper-pager">
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </div>
-  <script type="text/javascript"><!--
-  $('#slideshow0').swiper({
-      mode: 'horizontal',
-      slidesPerView: 1,
-      pagination: '.slideshow0',
-      paginationClickable: true,
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      spaceBetween: 30,
-      autoplay: 2500,
-      autoplayDisableOnInteraction: true,
-      loop: true
-  });
-  --></script>
-  -->
+  
         <h1>Корзина покупок
                   &nbsp;(10.00кг)
            </h1>
@@ -125,7 +99,7 @@
                 <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
                     <input type="text" name="quantity[10]" value="1" size="1" class="form-control" />
                     <span class="input-group-btn">
-                    <button type="submit" data-toggle="tooltip" title="Обновить" class="btn btn-primary"><i class="fa fa-refresh"></i></button>
+                    <button type="submit" data-toggle="tooltip" title="Обновить" class="btn btn-primary"><i class="fa fa-redo"></i></button>
                     <button type="button" data-toggle="tooltip" title="Удалить" class="btn btn-danger" onclick="cart.remove('10');"><i class="fa fa-times-circle"></i></button>
                     </span></div></td>
                 <td class="text-right">101&#8381;</td>
@@ -140,7 +114,7 @@
         <p>Если у вас есть код купона на скидку или бонусные баллы, которые вы хотите использовать, выберите соответствующий пункт ниже. А также, Вы можете приблизительно узнать стоимость доставки в ваш регион.</p>
         <div class="panel-group" id="accordion">         <div class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"><a href="#collapse-coupon" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Использовать купон <i class="fa fa-caret-down"></i></a></h4>
+      <h4 class="panel-title">Использовать купон</h4>
     </div>
     <div id="collapse-coupon" class="panel-collapse collapse">
       <div class="panel-body">
@@ -188,7 +162,7 @@
   
                   <div class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"><a href="#collapse-shipping" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Расчет стоимости доставки <i class="fa fa-caret-down"></i></a></h4>
+      <h4 class="panel-title">Расчет стоимости доставки</h4>
     </div>
     <div id="collapse-shipping" class="panel-collapse collapse">
       <div class="panel-body">
@@ -399,7 +373,7 @@
   
                   <div class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"><a href="#collapse-voucher" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Использовать Подарочный сертификат <i class="fa fa-caret-down"></i></a></h4>
+      <h4 class="panel-title">Использовать Подарочный сертификат</h4>
     </div>
     <div id="collapse-voucher" class="panel-collapse collapse">
       <div class="panel-body">
@@ -449,7 +423,7 @@
          <br />
         <div class="row">
           <div class="col-sm-4 col-sm-offset-8">
-            <table class="table table-bordered">
+            <table class="table table-bordered table-price">
                           <tr>
                 <td class="text-right"><strong>Сумма:</strong></td>
                 <td class="text-right">101&#8381;</td>
@@ -467,7 +441,6 @@
         </div>
         </div>
       </div>
-  </div>
   <footer class="footer" id="footer">
     <div class="footer__block">
         <div class="footer__row">

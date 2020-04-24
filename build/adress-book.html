@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Заголовок</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-pro-5.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+</head>
+
+<body>
+    <div class="menu-mobile">
+        <div class="menu-mobile__up">
+            <button data-close="mobile-menu"></button>
+            <div class="menu-mobile__buttons">
+                <button class="menu-mobile__button" data-show="like"><i class="far fa-heart white-color"></i></button>
+                <button class="menu-mobile__button" data-show="shopping"><i
+                        class="far fa-shopping-cart white-color"></i></button>
+            </div>
+        </div>
+
+        <ul class="mobile-list">
+            <li class="mobile-list__item"><button class="menu-mobile__button" data-show="profile"><i
+                        class="far fa-user-circle  white-color"></i> <span>Личный кабинет</span></button></li>
+            <li class="mobile-list__item"><a href="./index.html" class="mobile-list__link">Главная</a></li>
+            <li class="mobile-list__item"><a href="./catalog-girl.html" class="mobile-list__link">Каталог</a></li>
+            <li class="mobile-list__item"><a href="./index.html#about" class="mobile-list__link">О нас</a></li>
+            <li class="mobile-list__item"><a href="./LookBook.html" class="mobile-list__link">LookBook</a></li>
+            <li class="mobile-list__item"><a href="./partners.html" class="mobile-list__link">Партнерам</a></li>
+            <li class="mobile-list__item"><a href="#footer" class="mobile-list__link">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <button data-show="mobile-menu" class="header-menu-burger"><i class="fa fa-align-justify"
+                    aria-hidden="true"></i></button>
+
+            <a href="#" class="logo-link"><span class="logo">velvet</span><span class="logo__description">fashion
+                    studio</span></a>
+
+            <ul class="header-menu">
+                <li class="header-menu__item"><a href="./index.html" class="header-menu__link">Главная</a></li>
+                <li class="header-menu__item"><a href="./catalog-girl.html" class="header-menu__link">Каталог</a></li>
+                <li class="header-menu__item"><a href="./index.html#about" class="header-menu__link">О нас</a></li>
+                <li class="header-menu__item"><a href="./LookBook.html" class="header-menu__link">LookBook</a></li>
+                <li class="header-menu__item"><a href="./partners.html" class="header-menu__link">Партнерам</a></li>
+                <li class="header-menu__item"><a href="#footer" class="header-menu__link">Контакты</a></li>
+            </ul>
+            <a href="tel:+79281431030" class="header__phone-link"><span class="header__phone">+7(928)-143-10-30</span><i
+                    class="far fa-phone main-color"></i></a>
+            <div class="header-rightsidebar">
+                <form action="#" class="header-rightsidebar__search-form">
+                    <input type="search" class="header-rightsidebar__search">
+                    <button class="header-rightsidebar__search-button"><i
+                            class="far fa-search white-color"></i></button>
+                </form>
+                <button class="header-rightsidebar__button header-rightsidebar__button_buy" data-show="shopping"><i
+                        class="far fa-shopping-cart white-color"></i></button>
+                <button class="header-rightsidebar__button header-rightsidebar__button_like" data-show="like"><i
+                        class="far fa-heart white-color"></i></button>
+                <button class="header-rightsidebar__button header-rightsidebar__button_profile" data-show="profile"><i
+                        class="far fa-user-circle  white-color"></i></button>
+            </div>
+        </header>
+
+        <div id="account-address" class="container wrapper-personal-area">
+            <ul class="breadcrumb">
+                  <li><a href="http://velvet-fashion.com/"><i class="fa fa-home"></i></a></li>
+                  <li><a href="http://velvet-fashion.com/my-account">Личный Кабинет</a></li>
+                  <li><a href="http://velvet-fashion.com/address-book">Мои Адреса</a></li>
+                </ul>
+                <div class="row">
+                          <div id="content" class="col-sm-9">
+                <h2>Список адресов доставки</h2>
+                      <p>Список адресов в аккаунте, пуст.</p>
+                      <div class="buttons-adress">
+                  <div class="pull-left"><a href="http://velvet-fashion.com/my-account" class="btn btn-default">Назад</a></div>
+                  <div class="pull-right"><a href="http://velvet-fashion.com/index.php?route=account/address/add" class="btn btn-primary">Новый адрес</a></div>
+                </div>
+                </div>
+              <aside id="column-right" class="col-sm-3 hidden-xs">
+              <div class="list-group">
+              <a href="http://velvet-fashion.com/my-account" class="list-group-item">Моя информация</a>
+              <a href="http://velvet-fashion.com/edit-account" class="list-group-item">Изменить контактную информацию</a> <a href="http://velvet-fashion.com/change-password" class="list-group-item">Пароль</a>
+              <a href="http://velvet-fashion.com/address-book" class="list-group-item">Адресная книга</a> <a href="http://velvet-fashion.com/wishlist" class="list-group-item">Закладки</a> <a href="http://velvet-fashion.com/order-history" class="list-group-item">История заказов</a> <a href="http://velvet-fashion.com/downloads" class="list-group-item">Файлы для скачивания</a><a href="http://velvet-fashion.com/recurring" class="list-group-item">Регулярные платежи</a> <a href="http://velvet-fashion.com/reward-points" class="list-group-item">Бонусные баллы</a> <a href="http://velvet-fashion.com/returns" class="list-group-item">Возвраты</a> <a href="http://velvet-fashion.com/transactions" class="list-group-item">История транзакций</a> <a href="http://velvet-fashion.com/newsletter" class="list-group-item">E-Mail рассылка</a>
+              <a href="http://velvet-fashion.com/logout" class="list-group-item">Выход</a>
+            </div>
+          
+            </aside>
+          </div>
+          </div>
+
+<footer class="footer" id="footer">
+    <div class="footer__block">
+        <div class="footer__row">
+            <a href="#" class="logo-link"><span class="logo">velvet</span><span class="logo__description">fashion
+                    studio</span></a>
+            <div class="block-icons">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__row">
+            <ul class="footer-menu">
+                <li class="footer-menu__item">
+                    <a href="./index.html" class="footer-menu__link">Главная</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="./catalog-girl.html" class="footer-menu__link">Каталог</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="./personal-area.html" class="footer-menu__link">Личный кабинет</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__row">
+            <ul class="footer-menu">
+                <li class="footer-menu__item">
+                    <a href="./index.html#about" class="footer-menu__link">О нас</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="./partners.html" class="footer-menu__link">Партнерам</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">Доставка</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__row">
+            <span class="footer__title-contacts">Контакты</span>
+            <ul class="footer-menu">
+                <li class="footer-menu__item">
+                    <a href="tel:+79281431030" class="footer-menu__link"><i
+                            class="far fa-phone white-color"></i>+7(928)-143-10-30</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="mailto:velvet_fashion@mail.ru" class="footer-menu__link"><i
+                            class="fal fa-envelope"></i>velvet_fashion@mail.ru</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link footer__location"><i class="fal fa-map-marker"></i><span
+                            class="footer__location-text">Ростов-на-Дону,<br> ул. М. Горького, 151</span></a>
+                </li>
+            </ul>
+
+            <div class="block-icons">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <p class="footer__undertext">
+        <span class="footer__copy">&copy;<sub class="footer__year">2020</sub></span>
+        <a href="#" class="footer__privacy">Политика конфидециальности</a>
+    </p>
+</footer>
+
+<div class="modal-shopping-overlay">
+    <div class="modal-rightsidebar modal-shopping">
+        <h3 class="modal-shopping__title">Ваша корзина пуста</h3>
+        <ul class="modal-shopping__list">
+            <li class="modal-shopping__item">
+                Стоимость<span class="modal-shopping__price">0 руб.</span>
+            </li>
+            <li class="modal-shopping__item">
+                ИТОГО<span class="modal-shopping__price">0 руб.</span>
+            </li>
+        </ul>
+        <h4 class="modal-shopping__subtitle">Купи еще 2 шт. и сэконьте 10%</h4>
+        <ul class="modal-shopping__list modal-shopping__list_economical">
+            <li class="modal-shopping__item">
+                Стоимость<span class="modal-shopping__price modal-shopping__price_sale">0 руб.</span>
+            </li>
+            <li class="modal-shopping__item">
+                ИТОГО<span class="modal-shopping__price">0 руб.</span>
+            </li>
+            <li class="modal-shopping__item modal-shopping__item_economical">
+                Экономия<span class="modal-shopping__price">0 руб.</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal-profile-overlay">
+    <div class="modal-rightsidebar modal-profile">
+        <a href="./personal-area.html" class="modal-profile__personal-area">Личный кабинет</a>
+        <span class="modal-profile__functions">
+            <a href="#" class="modal-profile__login">Вход</a>/<a href="#" class="modal-profile__exit">Выход</a>
+        </span>
+    </div>
+</div>
+
+<script src="js/all.min.js"></script>
+</body>
+
+</html>
+
+
+
+
