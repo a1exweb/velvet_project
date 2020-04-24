@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Заголовок</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-pro-5.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+</head>
+
+<body>
+    <div class="menu-mobile">
+        <div class="menu-mobile__up">
+            <button data-close="mobile-menu"></button>
+            <div class="menu-mobile__buttons">
+                <button class="menu-mobile__button" data-show="like"><i class="far fa-heart white-color"></i></button>
+                <button class="menu-mobile__button" data-show="shopping"><i
+                        class="far fa-shopping-cart white-color"></i></button>
+            </div>
+        </div>
+
+        <ul class="mobile-list">
+            <li class="mobile-list__item"><button class="menu-mobile__button" data-show="profile"><i
+                        class="far fa-user-circle  white-color"></i> <span>Личный кабинет</span></button></li>
+            <li class="mobile-list__item"><a href="./index.html" class="mobile-list__link">Главная</a></li>
+            <li class="mobile-list__item"><a href="./catalog-girl.html" class="mobile-list__link">Каталог</a></li>
+            <li class="mobile-list__item"><a href="./index.html#about" class="mobile-list__link">О нас</a></li>
+            <li class="mobile-list__item"><a href="./LookBook.html" class="mobile-list__link">LookBook</a></li>
+            <li class="mobile-list__item"><a href="./partners.html" class="mobile-list__link">Партнерам</a></li>
+            <li class="mobile-list__item"><a href="#footer" class="mobile-list__link">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <button data-show="mobile-menu" class="header-menu-burger"><i class="fa fa-align-justify"
+                    aria-hidden="true"></i></button>
+
+            <a href="#" class="logo-link"><span class="logo">velvet</span><span class="logo__description">fashion
+                    studio</span></a>
+
+            <ul class="header-menu">
+                <li class="header-menu__item"><a href="./index.html" class="header-menu__link">Главная</a></li>
+                <li class="header-menu__item"><a href="./catalog-girl.html" class="header-menu__link">Каталог</a></li>
+                <li class="header-menu__item"><a href="./index.html#about" class="header-menu__link">О нас</a></li>
+                <li class="header-menu__item"><a href="./LookBook.html" class="header-menu__link">LookBook</a></li>
+                <li class="header-menu__item"><a href="./partners.html" class="header-menu__link">Партнерам</a></li>
+                <li class="header-menu__item"><a href="#footer" class="header-menu__link">Контакты</a></li>
+            </ul>
+            <a href="tel:+79281431030" class="header__phone-link"><span class="header__phone">+7(928)-143-10-30</span><i
+                    class="far fa-phone main-color"></i></a>
+            <div class="header-rightsidebar">
+                <form action="#" class="header-rightsidebar__search-form">
+                    <input type="search" class="header-rightsidebar__search">
+                    <button class="header-rightsidebar__search-button"><i
+                            class="far fa-search white-color"></i></button>
+                </form>
+                <button class="header-rightsidebar__button header-rightsidebar__button_buy" data-show="shopping"><i
+                        class="far fa-shopping-cart white-color"></i></button>
+                <button class="header-rightsidebar__button header-rightsidebar__button_like" data-show="like"><i
+                        class="far fa-heart white-color"></i></button>
+                <button class="header-rightsidebar__button header-rightsidebar__button_profile" data-show="profile"><i
+                        class="far fa-user-circle  white-color"></i></button>
+            </div>
+        </header>
+<div id="checkout-cart" class="container wrapper-personal-area cart-page">
+    <ul class="breadcrumb">
+          <li><a href="http://velet.yourocket.ru/"><i class="fa fa-home"></i></a></li>
+          <li><a href="http://velet.yourocket.ru/cart">Корзина покупок</a></li>
+        </ul>
+  
+        <h1>Корзина покупок
+                  &nbsp;(10.00кг)
+           </h1>
+        <form action="http://velet.yourocket.ru/index.php?route=checkout/cart/edit" method="post" enctype="multipart/form-data">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <td class="text-center">Изображение</td>
+                  <td class="text-left">Название</td>
+                  <td class="text-left">Модель</td>
+                  <td class="text-left">Количество</td>
+                  <td class="text-right">Цена за шт.</td>
+                  <td class="text-right">Всего</td>
+                </tr>
+              </thead>
+              <tbody>
+              
+                          <tr>
+                <td class="text-center"> <a href="http://velet.yourocket.ru/iphone"><img src="http://velet.yourocket.ru/image/cache/catalog/demo/iphone_1-47x47.jpg" alt="iPhone" title="iPhone" class="img-thumbnail" /></a> </td>
+                <td class="text-left"><a href="http://velet.yourocket.ru/iphone">iPhone</a>                                                 </td>
+                <td class="text-left">product 11</td>
+                <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
+                    <input type="text" name="quantity[10]" value="1" size="1" class="form-control" />
+                    <span class="input-group-btn">
+                    <button type="submit" data-toggle="tooltip" title="Обновить" class="btn btn-primary"><i class="fa fa-redo"></i></button>
+                    <button type="button" data-toggle="tooltip" title="Удалить" class="btn btn-danger" onclick="cart.remove('10');"><i class="fa fa-times-circle"></i></button>
+                    </span></div></td>
+                <td class="text-right">101&#8381;</td>
+                <td class="text-right">101&#8381;</td>
+              </tr>
+                                        </tbody>
+              
+            </table>
+          </div>
+        </form>
+              <h2>Что бы вы хотели сделать дальше?</h2>
+        <p>Если у вас есть код купона на скидку или бонусные баллы, которые вы хотите использовать, выберите соответствующий пункт ниже. А также, Вы можете приблизительно узнать стоимость доставки в ваш регион.</p>
+        <div class="panel-group" id="accordion">         <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">Использовать купон</h4>
+    </div>
+    <div id="collapse-coupon" class="panel-collapse collapse">
+      <div class="panel-body">
+        <label class="col-sm-2 control-label" for="input-coupon">Введите код купона</label>
+        <div class="input-group">
+          <input type="text" name="coupon" value="" placeholder="Введите код купона" id="input-coupon" class="form-control" />
+          <span class="input-group-btn">
+          <input type="button" value="Применение купона" id="button-coupon" data-loading-text="Загрузка..."  class="btn btn-primary" />
+          </span></div>
+        <script type="text/javascript"><!--
+  $('#button-coupon').on('click', function() {
+      $.ajax({
+          url: 'index.php?route=extension/total/coupon/coupon',
+          type: 'post',
+          data: 'coupon=' + encodeURIComponent($('input[name=\'coupon\']').val()),
+          dataType: 'json',
+          beforeSend: function() {
+              $('#button-coupon').button('loading');
+          },
+          complete: function() {
+              $('#button-coupon').button('reset');
+          },
+          success: function(json) {
+              $('.alert-dismissible').remove();
+  
+              if (json['error']) {
+                  $('.breadcrumb').after('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+  
+                  $('html, body').animate({ scrollTop: 0 }, 'slow');
+              }
+  
+              if (json['redirect']) {
+                  location = json['redirect'];
+              }
+          },
+          error: function(xhr, ajaxOptions, thrownError) {
+              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+          }
+      });
+  });
+  //--></script>
+      </div>
+    </div>
+  </div>
+  
+                  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">Расчет стоимости доставки</h4>
+    </div>
+    <div id="collapse-shipping" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>Укажите ваш регион для расчета стоимости доставки.</p>
+        <div class="form-horizontal">
+          <div class="form-group required">
+            <label class="col-sm-2 control-label" for="input-country">Страна</label>
+            <div class="col-sm-10">
+              <select name="country_id" id="input-country" class="form-control">
+                <option value=""> --- Выберите --- </option>
+                                            <option value="20">Белоруссия (Беларусь)</option>
+                                                          <option value="80">Грузия</option>
+                                                          <option value="109">Казахстан</option>
+                                                          <option value="115">Киргизия (Кыргызстан)</option>
+                                                          <option value="176" selected="selected">Российская Федерация</option>
+                                                          <option value="226">Узбекистан</option>
+                                                          <option value="220">Украина</option>
+                                          </select>
+            </div>
+          </div>
+          <div class="form-group required">
+            <label class="col-sm-2 control-label" for="input-zone">Регион / Область</label>
+            <div class="col-sm-10">
+              <select name="zone_id" id="input-zone" class="form-control">
+              </select>
+            </div>
+          </div>
+          <div class="form-group required">
+            <label class="col-sm-2 control-label" for="input-postcode">Индекс</label>
+            <div class="col-sm-10">
+              <input type="text" name="postcode" value="" placeholder="Индекс" id="input-postcode" class="form-control" />
+            </div>
+          </div>
+          <button type="button" id="button-quote" data-loading-text="Загрузка..." class="btn btn-primary">Узнать цены</button>
+        </div>
+        <script type="text/javascript"><!--
+  $('#button-quote').on('click', function() {
+      $.ajax({
+          url: 'index.php?route=extension/total/shipping/quote',
+          type: 'post',
+          data: 'country_id=' + $('select[name=\'country_id\']').val() + '&zone_id=' + $('select[name=\'zone_id\']').val() + '&postcode=' + encodeURIComponent($('input[name=\'postcode\']').val()),
+          dataType: 'json',
+          beforeSend: function() {
+              $('#button-quote').button('loading');
+          },
+          complete: function() {
+              $('#button-quote').button('reset');
+          },
+          success: function(json) {
+              $('.alert-dismissible, .text-danger').remove();
+  
+              if (json['error']) {
+                  if (json['error']['warning']) {
+                      $('.breadcrumb').after('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+  
+                      $('html, body').animate({ scrollTop: 0 }, 'slow');
+                  }
+  
+                  if (json['error']['country']) {
+                      $('select[name=\'country_id\']').after('<div class="text-danger">' + json['error']['country'] + '</div>');
+                  }
+  
+                  if (json['error']['zone']) {
+                      $('select[name=\'zone_id\']').after('<div class="text-danger">' + json['error']['zone'] + '</div>');
+                  }
+  
+                  if (json['error']['postcode']) {
+                      $('input[name=\'postcode\']').after('<div class="text-danger">' + json['error']['postcode'] + '</div>');
+                  }
+              }
+  
+              if (json['shipping_method']) {
+                  $('#modal-shipping').remove();
+  
+                  html  = '<div id="modal-shipping" class="modal">';
+                  html += '  <div class="modal-dialog">';
+                  html += '    <div class="modal-content">';
+                  html += '      <div class="modal-header">';
+                  html += '        <h4 class="modal-title">Пожалуйста, выберите предпочтительный способ доставки, для текущего заказа.</h4>';
+                  html += '      </div>';
+                  html += '      <div class="modal-body">';
+  
+                  for (i in json['shipping_method']) {
+                      html += '<p><strong>' + json['shipping_method'][i]['title'] + '</strong></p>';
+  
+                      if (!json['shipping_method'][i]['error']) {
+                          for (j in json['shipping_method'][i]['quote']) {
+                              html += '<div class="radio">';
+                              html += '  <label>';
+  
+                              if (json['shipping_method'][i]['quote'][j]['code'] == '') {
+                                  html += '<input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" checked="checked" />';
+                              } else {
+                                  html += '<input type="radio" name="shipping_method" value="' + json['shipping_method'][i]['quote'][j]['code'] + '" />';
+                              }
+  
+                              html += json['shipping_method'][i]['quote'][j]['title'] + ' - ' + json['shipping_method'][i]['quote'][j]['text'] + '</label></div>';
+                          }
+                      } else {
+                          html += '<div class="alert alert-danger alert-dismissible">' + json['shipping_method'][i]['error'] + '</div>';
+                      }
+                  }
+  
+                  html += '      </div>';
+                  html += '      <div class="modal-footer">';
+                  html += '        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>';
+  
+                                  html += '        <input type="button" value="Применить Доставку" id="button-shipping" data-loading-text="Загрузка..." class="btn btn-primary" disabled="disabled" />';
+                  
+                  html += '      </div>';
+                  html += '    </div>';
+                  html += '  </div>';
+                  html += '</div> ';
+  
+                  $('body').append(html);
+  
+                  $('#modal-shipping').modal('show');
+  
+                  $('input[name=\'shipping_method\']').on('change', function() {
+                      $('#button-shipping').prop('disabled', false);
+                  });
+              }
+          },
+          error: function(xhr, ajaxOptions, thrownError) {
+              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+          }
+      });
+  });
+  
+  $(document).delegate('#button-shipping', 'click', function() {
+      $.ajax({
+          url: 'index.php?route=extension/total/shipping/shipping',
+          type: 'post',
+          data: 'shipping_method=' + encodeURIComponent($('input[name=\'shipping_method\']:checked').val()),
+          dataType: 'json',
+          beforeSend: function() {
+              $('#button-shipping').button('loading');
+          },
+          complete: function() {
+              $('#button-shipping').button('reset');
+          },
+          success: function(json) {
+              $('.alert-dismissible').remove();
+  
+              if (json['error']) {
+                  $('.breadcrumb').after('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+  
+                  $('html, body').animate({ scrollTop: 0 }, 'slow');
+              }
+  
+              if (json['redirect']) {
+                  location = json['redirect'];
+              }
+          },
+          error: function(xhr, ajaxOptions, thrownError) {
+              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+          }
+      });
+  });
+  //--></script>
+  <script type="text/javascript"><!--
+  $('select[name=\'country_id\']').on('change', function() {
+      $.ajax({
+          url: 'index.php?route=extension/total/shipping/country&country_id=' + this.value,
+          dataType: 'json',
+          beforeSend: function() {
+              $('select[name=\'country_id\']').prop('disabled', true);
+          },
+          complete: function() {
+              $('select[name=\'country_id\']').prop('disabled', false);
+          },
+          success: function(json) {
+              if (json['postcode_required'] == '1') {
+                  $('input[name=\'postcode\']').parent().parent().addClass('required');
+              } else {
+                  $('input[name=\'postcode\']').parent().parent().removeClass('required');
+              }
+  
+              html = '<option value=""> --- Выберите --- </option>';
+  
+              if (json['zone'] && json['zone'] != '') {
+                  for (i = 0; i < json['zone'].length; i++) {
+                      html += '<option value="' + json['zone'][i]['zone_id'] + '"';
+  
+                      if (json['zone'][i]['zone_id'] == '') {
+                          html += ' selected="selected"';
+                      }
+  
+                      html += '>' + json['zone'][i]['name'] + '</option>';
+                  }
+              } else {
+                  html += '<option value="0" selected="selected"> --- Не выбрано --- </option>';
+              }
+  
+              $('select[name=\'zone_id\']').html(html);
+          },
+          error: function(xhr, ajaxOptions, thrownError) {
+              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+          }
+      });
+  });
+  
+  $('select[name=\'country_id\']').trigger('change');
+  //--></script>
+      </div>
+    </div>
+  </div>
+  
+                  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">Использовать Подарочный сертификат</h4>
+    </div>
+    <div id="collapse-voucher" class="panel-collapse collapse">
+      <div class="panel-body">
+        <label class="col-sm-2 control-label" for="input-voucher">Введите код Подарочного сертификата</label>
+        <div class="input-group">
+          <input type="text" name="voucher" value="" placeholder="Введите код Подарочного сертификата" id="input-voucher" class="form-control" />
+          <span class="input-group-btn">
+          <input type="submit" value="Применить подарочный сертификат" id="button-voucher" data-loading-text="Загрузка..."  class="btn btn-primary" />
+          </span> </div>
+        <script type="text/javascript"><!--
+  $('#button-voucher').on('click', function() {
+      $.ajax({
+          url: 'index.php?route=extension/total/voucher/voucher',
+          type: 'post',
+          data: 'voucher=' + encodeURIComponent($('input[name=\'voucher\']').val()),
+          dataType: 'json',
+          beforeSend: function() {
+              $('#button-voucher').button('loading');
+          },
+          complete: function() {
+              $('#button-voucher').button('reset');
+          },
+          success: function(json) {
+              $('.alert-dismissible').remove();
+              
+              if (json['error']) {
+                  $('.breadcrumb').after('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                  
+                  $('html, body').animate({ scrollTop: 0 }, 'slow');
+              }
+              
+              if (json['redirect']) {
+                  location = json['redirect'];
+              }
+          },
+          error: function(xhr, ajaxOptions, thrownError) {
+              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+          }
+      });
+  });
+  //--></script>
+      </div>
+    </div>
+  </div>
+  
+           </div>
+         <br />
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-8">
+            <table class="table table-bordered table-price">
+                          <tr>
+                <td class="text-right"><strong>Сумма:</strong></td>
+                <td class="text-right">101&#8381;</td>
+              </tr>
+                          <tr>
+                <td class="text-right"><strong>Итого:</strong></td>
+                <td class="text-right">101&#8381;</td>
+              </tr>
+                        </table>
+          </div>
+        </div>
+        <div class="buttons clearfix">
+          <div class="pull-left"><a href="http://velet.yourocket.ru/" class="btn btn-default">Продолжить покупки</a></div>
+          <div class="pull-right"><a href="http://velet.yourocket.ru/checkout" class="btn btn-primary">Оформление заказа</a></div>
+        </div>
+        </div>
+      </div>
+  <footer class="footer" id="footer">
+    <div class="footer__block">
+        <div class="footer__row">
+            <a href="#" class="logo-link"><span class="logo">velvet</span><span class="logo__description">fashion
+                    studio</span></a>
+            <div class="block-icons">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__row">
+            <ul class="footer-menu">
+                <li class="footer-menu__item">
+                    <a href="./index.html" class="footer-menu__link">Главная</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="./catalog-girl.html" class="footer-menu__link">Каталог</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="./personal-area.html" class="footer-menu__link">Личный кабинет</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__row">
+            <ul class="footer-menu">
+                <li class="footer-menu__item">
+                    <a href="./index.html#about" class="footer-menu__link">О нас</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="./partners.html" class="footer-menu__link">Партнерам</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">Доставка</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__row">
+            <span class="footer__title-contacts">Контакты</span>
+            <ul class="footer-menu">
+                <li class="footer-menu__item">
+                    <a href="tel:+79281431030" class="footer-menu__link"><i
+                            class="far fa-phone white-color"></i>+7(928)-143-10-30</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="mailto:velvet_fashion@mail.ru" class="footer-menu__link"><i
+                            class="fal fa-envelope"></i>velvet_fashion@mail.ru</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link footer__location"><i class="fal fa-map-marker"></i><span
+                            class="footer__location-text">Ростов-на-Дону,<br> ул. М. Горького, 151</span></a>
+                </li>
+            </ul>
+
+            <div class="block-icons">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <p class="footer__undertext">
+        <span class="footer__copy">&copy;<sub class="footer__year">2020</sub></span>
+        <a href="#" class="footer__privacy">Политика конфидециальности</a>
+    </p>
+</footer>
+
+<div class="modal-shopping-overlay">
+    <div class="modal-rightsidebar modal-shopping">
+        <h3 class="modal-shopping__title">Ваша корзина пуста</h3>
+        <ul class="modal-shopping__list">
+            <li class="modal-shopping__item">
+                Стоимость<span class="modal-shopping__price">0 руб.</span>
+            </li>
+            <li class="modal-shopping__item">
+                ИТОГО<span class="modal-shopping__price">0 руб.</span>
+            </li>
+        </ul>
+        <h4 class="modal-shopping__subtitle">Купи еще 2 шт. и сэконьте 10%</h4>
+        <ul class="modal-shopping__list modal-shopping__list_economical">
+            <li class="modal-shopping__item">
+                Стоимость<span class="modal-shopping__price modal-shopping__price_sale">0 руб.</span>
+            </li>
+            <li class="modal-shopping__item">
+                ИТОГО<span class="modal-shopping__price">0 руб.</span>
+            </li>
+            <li class="modal-shopping__item modal-shopping__item_economical">
+                Экономия<span class="modal-shopping__price">0 руб.</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal-profile-overlay">
+    <div class="modal-rightsidebar modal-profile">
+        <a href="./personal-area.html" class="modal-profile__personal-area">Личный кабинет</a>
+        <span class="modal-profile__functions">
+            <a href="#" class="modal-profile__login">Вход</a>/<a href="#" class="modal-profile__exit">Выход</a>
+        </span>
+    </div>
+</div>
+
+<script src="js/all.min.js"></script>
+</body>
+
+</html>
