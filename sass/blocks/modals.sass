@@ -10,6 +10,15 @@
         visibility: hidden
         opacity: 0
         transition: .2s
+    &-shopping
+        &__btn
+            display: flex
+            justify-content: center
+            text-decoration: none
+            margin-top: 10px
+            padding: 15px
+            color: $white
+            background-color: $pink
     &-shopping, &-profile
         &-overlay
             position: fixed
@@ -65,3 +74,25 @@
             color: $text-main
         & * a
             text-decoration: none
+
+.alert.alert-success.alert-dismissible 
+    background: #fff
+    border: 1px solid
+    top: 50%
+    left: 50%
+    max-width: 300px
+    position: fixed
+    z-index: 999
+    text-align: center
+    padding: 20px
+    & .close
+        background: $pink
+        width: 30px
+        height: 30px
+        color: white
+        border: none
+        position: absolute
+        right: -37px
+        top: 0
+    & a
+        color: $text-main
