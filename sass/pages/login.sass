@@ -120,7 +120,7 @@ input[type="checkbox"]:checked ~ .policy-label::after
         cursor: pointer
 input[type="radio"]
     display: none
-input[type="radio"]:checked ~ .radio-inline::before
+input[type="radio"]:checked + .radio-inline::before
     color: $pink
 
 @media ( max-width: 1400px )
