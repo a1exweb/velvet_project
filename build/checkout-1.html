@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Заголовок</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-pro-5.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+</head>
+
+<body>
+    <div class="menu-mobile">
+        <div class="menu-mobile__up">
+            <button data-close="mobile-menu"></button>
+            <div class="menu-mobile__buttons">
+                <button class="menu-mobile__button" data-show="like"><i class="far fa-heart white-color"></i></button>
+                <button class="menu-mobile__button" data-show="shopping"><i
+                        class="far fa-shopping-cart white-color"></i></button>
+            </div>
+        </div>
+
+        <ul class="mobile-list">
+            <li class="mobile-list__item"><button class="menu-mobile__button" data-show="profile"><i
+                        class="far fa-user-circle  white-color"></i> <span>Личный кабинет</span></button></li>
+            <li class="mobile-list__item"><a href="./index.html" class="mobile-list__link">Главная</a></li>
+            <li class="mobile-list__item"><a href="./catalog-girl.html" class="mobile-list__link">Каталог</a></li>
+            <li class="mobile-list__item"><a href="./index.html#about" class="mobile-list__link">О нас</a></li>
+            <li class="mobile-list__item"><a href="./LookBook.html" class="mobile-list__link">LookBook</a></li>
+            <li class="mobile-list__item"><a href="./partners.html" class="mobile-list__link">Партнерам</a></li>
+            <li class="mobile-list__item"><a href="#footer" class="mobile-list__link">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <button data-show="mobile-menu" class="header-menu-burger"><i class="fa fa-align-justify"
+                    aria-hidden="true"></i></button>
+
+            <a href="#" class="logo-link"><span class="logo">velvet</span><span class="logo__description">fashion
+                    studio</span></a>
+
+            <ul class="header-menu">
+                <li class="header-menu__item"><a href="./index.html" class="header-menu__link">Главная</a></li>
+                <li class="header-menu__item"><a href="./catalog-girl.html" class="header-menu__link">Каталог</a></li>
+                <li class="header-menu__item"><a href="./index.html#about" class="header-menu__link">О нас</a></li>
+                <li class="header-menu__item"><a href="./LookBook.html" class="header-menu__link">LookBook</a></li>
+                <li class="header-menu__item"><a href="./partners.html" class="header-menu__link">Партнерам</a></li>
+                <li class="header-menu__item"><a href="#footer" class="header-menu__link">Контакты</a></li>
+            </ul>
+            <a href="tel:+79281431030" class="header__phone-link"><span class="header__phone">+7(928)-143-10-30</span><i
+                    class="far fa-phone main-color"></i></a>
+            <div class="header-rightsidebar">
+                <form action="#" class="header-rightsidebar__search-form form-default">
+                    <input type="search" class="header-rightsidebar__search">
+                    <button class="header-rightsidebar__search-button"><i
+                            class="far fa-search white-color"></i></button>
+                </form>
+                <button class="header-rightsidebar__button header-rightsidebar__button_buy" data-show="shopping"><i
+                        class="far fa-shopping-cart white-color"></i></button>
+                <button class="header-rightsidebar__button header-rightsidebar__button_like" data-show="like"><i
+                        class="far fa-heart white-color"></i></button>
+                <button class="header-rightsidebar__button header-rightsidebar__button_profile" data-show="profile"><i
+                        class="far fa-user-circle  white-color"></i></button>
+            </div>
+        </header>
+
+        <div id="checkout-checkout" class="container wrapper-personal-area">
+            <ul class="breadcrumb">
+                <li><a href="http://velvet-fashion.com/"><i class="fa fa-home"></i></a></li>
+                <li><a href="http://velvet-fashion.com/cart">Корзина покупок</a></li>
+                <li><a href="http://velvet-fashion.com/checkout">Оформление заказа</a></li>
+            </ul>
+            <div class="row">
+                <div id="content" class="col-sm-12">
+                    <h1>Оформление заказа</h1>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Шаг 1: Способ оформления заказа</h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-checkout-option">
+                                <div class="panel-body"></div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a href="#collapse-payment-address" data-toggle="collapse"
+                                        data-parent="#accordion" class="accordion-toggle" aria-expanded="true">Шаг 2:
+                                        Платежная информация <i class="fa fa-caret-down"></i></a></h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapse-payment-address" aria-expanded="true"
+                                style="">
+                                <div class="panel-body">
+                                    <form class="form-horizontal form-default">
+                                        <br>
+                                        <div id="payment-new" style="display: block;">
+                                            <div class="form-group required">
+                                                <label class="col-sm-2 control-label"
+                                                    for="input-payment-firstname">Имя</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" name="firstname" value="" placeholder="Имя"
+                                                        id="input-payment-firstname" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group required">
+                                                <label class="col-sm-2 control-label"
+                                                    for="input-payment-lastname">Фамилия</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" name="lastname" value="" placeholder="Фамилия"
+                                                        id="input-payment-lastname" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label"
+                                                    for="input-payment-company">Компания</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" name="company" value="" placeholder="Компания"
+                                                        id="input-payment-company" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group required">
+                                                <label class="col-sm-2 control-label"
+                                                    for="input-payment-address-1">Адрес</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" name="address_1" value="" placeholder="Адрес"
+                                                        id="input-payment-address-1" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label"
+                                                    for="input-payment-address-2">Адрес 2</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" name="address_2" value="" placeholder="Адрес 2"
+                                                        id="input-payment-address-2" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group required">
+                                                <label class="col-sm-2 control-label"
+                                                    for="input-payment-city">Город</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" name="city" value="" placeholder="Город"
+                                                        id="input-payment-city" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label"
+                                                    for="input-payment-postcode">Индекс</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" name="postcode" value="" placeholder="Индекс"
+                                                        id="input-payment-postcode" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group required">
+                                                <label class="col-sm-2 control-label"
+                                                    for="input-payment-country">Страна</label>
+                                                <div class="col-sm-10">
+                                                    <select name="country_id" id="input-payment-country"
+                                                        class="form-control">
+                                                        <option value=""> --- Выберите --- </option>
+                                                        <option value="20">Белоруссия (Беларусь)</option>
+                                                        <option value="80">Грузия</option>
+                                                        <option value="109">Казахстан</option>
+                                                        <option value="115">Киргизия (Кыргызстан)</option>
+                                                        <option value="176" selected="selected">Российская Федерация
+                                                        </option>
+                                                        <option value="226">Узбекистан</option>
+                                                        <option value="220">Украина</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group required">
+                                                <label class="col-sm-2 control-label" for="input-payment-zone">Регион /
+                                                    Область</label>
+                                                <div class="col-sm-10">
+                                                    <select name="zone_id" id="input-payment-zone" class="form-control">
+                                                        <option value=""> --- Выберите --- </option>
+                                                        <option value="50">Алтайский край</option>
+                                                        <option value="53">Амурская область</option>
+                                                        <option value="48">Архангельская область</option>
+                                                        <option value="49">Астраханская область</option>
+                                                        <option value="169">Байконур - город республ-го значения
+                                                        </option>
+                                                        <option value="51">Белгородская область</option>
+                                                        <option value="54">Брянская область</option>
+                                                        <option value="118">Владимирская область</option>
+                                                        <option value="120">Волгоградская область</option>
+                                                        <option value="121">Вологодская область</option>
+                                                        <option value="122">Воронежская область</option>
+                                                        <option value="52">Еврейская АО</option>
+                                                        <option value="58">Забайкальский край</option>
+                                                        <option value="65">Ивановская область</option>
+                                                        <option value="64">Иркутская область</option>
+                                                        <option value="67">Калининградская область</option>
+                                                        <option value="68">Калужская область</option>
+                                                        <option value="96">Камчатский край</option>
+                                                        <option value="57">Карачаево-Черкесия</option>
+                                                        <option value="70">Кемеровская область</option>
+                                                        <option value="123">Кировская область</option>
+                                                        <option value="73">Костромская область</option>
+                                                        <option value="74">Краснодарский край</option>
+                                                        <option value="75">Красноярский край</option>
+                                                        <option value="76">Курганская область</option>
+                                                        <option value="77">Курская область</option>
+                                                        <option value="59">Ленинградская область</option>
+                                                        <option value="79">Липецкая область</option>
+                                                        <option value="80">Магаданская область</option>
+                                                        <option value="83">Москва</option>
+                                                        <option value="46">Московская область</option>
+                                                        <option value="84">Мурманская область</option>
+                                                        <option value="86">Ненецкий АО</option>
+                                                        <option value="88">Нижегородская область</option>
+                                                        <option value="89">Новгородская область</option>
+                                                        <option value="90">Новосибирская область</option>
+                                                        <option value="91">Омская область</option>
+                                                        <option value="93">Оренбургская область</option>
+                                                        <option value="92">Орловская область</option>
+                                                        <option value="94">Пензенская область</option>
+                                                        <option value="95">Пермский край</option>
+                                                        <option value="119">Приморский край</option>
+                                                        <option value="98">Псковская область</option>
+                                                        <option value="82">Республика Адыгея</option>
+                                                        <option value="62">Республика Алтай</option>
+                                                        <option value="114">Республика Башкортостан</option>
+                                                        <option value="116">Республика Бурятия</option>
+                                                        <option value="81">Республика Дагестан</option>
+                                                        <option value="87">Республика Ингушетия</option>
+                                                        <option value="85">Республика Кабардино-Балкария</option>
+                                                        <option value="60">Республика Калмыкия</option>
+                                                        <option value="97">Республика Карелия</option>
+                                                        <option value="108">Республика Коми</option>
+                                                        <option value="128">Республика Крым</option>
+                                                        <option value="127">Республика Марий Эл</option>
+                                                        <option value="103">Республика Мордовия</option>
+                                                        <option value="124">Республика Саха</option>
+                                                        <option value="117">Республика Северная Осетия</option>
+                                                        <option value="69">Республика Татарстан</option>
+                                                        <option value="78">Республика Тыва</option>
+                                                        <option value="45">Республика Хакасия</option>
+                                                        <option value="99">Ростовская область</option>
+                                                        <option value="100">Рязанская область</option>
+                                                        <option value="102">Самарская область</option>
+                                                        <option value="106">Санкт-Петербург</option>
+                                                        <option value="104">Саратовская область</option>
+                                                        <option value="61">Сахалинская область</option>
+                                                        <option value="126">Свердловская область</option>
+                                                        <option value="146">Севастополь</option>
+                                                        <option value="105">Смоленская область</option>
+                                                        <option value="107">Ставропольский край</option>
+                                                        <option value="109">Тамбовская область</option>
+                                                        <option value="112">Тверская область</option>
+                                                        <option value="110">Томская область</option>
+                                                        <option value="111">Тульская область</option>
+                                                        <option value="113">Тюменская область</option>
+                                                        <option value="66">Удмуртская Республика</option>
+                                                        <option value="115">Ульяновская область</option>
+                                                        <option value="71">Хабаровский край</option>
+                                                        <option value="72">Ханты-Мансийский АО - Югра</option>
+                                                        <option value="56">Челябинская область</option>
+                                                        <option value="63">Чеченская Республика</option>
+                                                        <option value="55">Чувашская Республика</option>
+                                                        <option value="47">Чукотский АО</option>
+                                                        <option value="101">Ямало-Ненецкий АО</option>
+                                                        <option value="125">Ярославская область</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons clearfix">
+                                            <div class="pull-right">
+                                                <input type="button" value="Продолжить" id="button-payment-address"
+                                                    data-loading-text="Загрузка..." class="btn btn-primary">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Шаг 3: Адрес доставки</h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-shipping-address">
+                                <div class="panel-body"></div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Шаг 4: Способ доставки</h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-shipping-method">
+                                <div class="panel-body"></div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Шаг 5: Способ оплаты</h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-payment-method">
+                                <div class="panel-body"></div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Шаг 6: Подтверждение заказа</h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-checkout-confirm">
+                                <div class="panel-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="footer">
+            <div class="footer__block">
+                <div class="footer__row">
+                    <a href="#" class="logo-link"><span class="logo">velvet</span><span
+                            class="logo__description">fashion
+                            studio</span></a>
+                    <div class="block-icons">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__row">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a href="./index.html" class="footer-menu__link">Главная</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="./catalog-girl.html" class="footer-menu__link">Каталог</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="./personal-area.html" class="footer-menu__link">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__row">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a href="./index.html#about" class="footer-menu__link">О нас</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="./partners.html" class="footer-menu__link">Партнерам</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link">Доставка</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__row">
+                    <span class="footer__title-contacts">Контакты</span>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a href="tel:+79281431030" class="footer-menu__link"><i
+                                    class="far fa-phone white-color"></i>+7(928)-143-10-30</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="mailto:velvet_fashion@mail.ru" class="footer-menu__link"><i
+                                    class="fal fa-envelope"></i>velvet_fashion@mail.ru</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#" class="footer-menu__link footer__location"><i
+                                    class="fal fa-map-marker"></i><span
+                                    class="footer__location-text">Ростов-на-Дону,<br> ул. М. Горького, 151</span></a>
+                        </li>
+                    </ul>
+
+                    <div class="block-icons">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__undertext">
+                <span class="footer__copy">&copy;<sub class="footer__year">2020</sub></span>
+                <a href="#" class="footer__privacy">Политика конфидециальности</a>
+            </p>
+        </footer>
+
+        <div class="modal-shopping-overlay">
+            <div class="modal-rightsidebar modal-shopping">
+                <h3 class="modal-shopping__title">Ваша корзина пуста</h3>
+                <ul class="modal-shopping__list">
+                    <li class="modal-shopping__item">
+                        Стоимость<span class="modal-shopping__price">0 руб.</span>
+                    </li>
+                    <li class="modal-shopping__item">
+                        ИТОГО<span class="modal-shopping__price">0 руб.</span>
+                    </li>
+                </ul>
+                <h4 class="modal-shopping__subtitle">Купи еще 2 шт. и сэконьте 10%</h4>
+                <ul class="modal-shopping__list modal-shopping__list_economical">
+                    <li class="modal-shopping__item">
+                        Стоимость<span class="modal-shopping__price modal-shopping__price_sale">0 руб.</span>
+                    </li>
+                    <li class="modal-shopping__item">
+                        ИТОГО<span class="modal-shopping__price">0 руб.</span>
+                    </li>
+                    <li class="modal-shopping__item modal-shopping__item_economical">
+                        Экономия<span class="modal-shopping__price">0 руб.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal-profile-overlay">
+            <div class="modal-rightsidebar modal-profile">
+                <a href="./personal-area.html" class="modal-profile__personal-area">Личный кабинет</a>
+                <span class="modal-profile__functions">
+                    <a href="#" class="modal-profile__login">Вход</a>/<a href="#" class="modal-profile__exit">Выход</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
