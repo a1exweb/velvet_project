@@ -3,20 +3,6 @@
     flex-direction: column
     align-items: center
     margin-bottom: 40px
-    & table
-        width: 800px
-        & td
-            width: 150px
-            font-size: 14px
-        & button
-            max-width: 20px
-            margin-right: 5px
-            margin-bottom: 5px
-            &:last-child
-                margin-right: 0
-        & .input-group-btn
-            margin-top: 10px
-            display: flex
     & input 
         border: 1px solid $pink
         padding: 15px
@@ -38,18 +24,30 @@
     & p, & label, & select
         margin-bottom: 5px
         margin-top: 5px
+.table-responsive
+    & table
+        width: 800px
+        & td
+            width: 150px
+            font-size: 14px
+        & button
+            max-width: 20px
+            margin-right: 5px
+            margin-bottom: 5px
+            &:last-child
+                margin-right: 0
+        & .input-group-btn
+            margin-top: 10px
+            display: flex
 @media (max-width: 900px)
-    .cart-page
-        & .table-responsive
-            max-width: 500px
-            overflow-x: scroll
+    .table-responsive
+        max-width: 300px
+        overflow-x: scroll
 @media (max-width: 600px)
-    .cart-page
-        & .table-responsive
-            max-width: 400px
-            overflow-x: scroll
+    .table-responsive
+        max-width: 300px
+        overflow-x: scroll
 @media (max-width: 500px)
-    .cart-page
-        & .table-responsive
-            max-width: 300px
-            overflow-x: scroll
+    .table-responsive
+        max-width: 300px
+        overflow-x: scroll
