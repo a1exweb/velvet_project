@@ -9,11 +9,34 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
+if ($(window).width() > 640) {
+    $('.our-instagram-photo').on('click', function() {
+        $('.our-instagram').addClass('our-instagram_active');
+        $('body').css('overflow-y', 'hidden');
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            navText: [' ', ' ']
+        });
+        $('.button-show-more').css('display', 'none');
+    });
+    
+    $('.our-instagram__close').on('click', function() {
+        $('.our-instagram').removeClass('our-instagram_active');
+        $('body').css('overflow-y', 'scroll');
+        $(".owl-carousel").trigger('destroy.owl.carousel');
+        $('.button-show-more').css('display', 'flex');
+    });
+}
+
+
 $(window).on('load resize', function () {
     if ($(window).width() < 640) {
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel({
                 items: 1,
+                loop: true,
                 nav: true,
                 navText: [' ', ' ']
             });

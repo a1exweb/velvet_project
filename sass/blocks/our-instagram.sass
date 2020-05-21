@@ -1,5 +1,24 @@
 .our-instagram
     position: relative
+    &_active
+        position: fixed
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        padding-top: 5%
+        background: #fff
+        z-index: 9999
+        & > .our-instagram__close
+            display: block
+    &__close
+        position: absolute
+        top: 5%
+        right: 5%
+        font-size: 50px
+        background-color: transparent
+        border: 0
+        display: none
     &__count
         font-size: px-to-rem(20px)
     &__title
@@ -10,6 +29,7 @@
         display: flex
         justify-content: center
         align-items: center
+        margin: auto
         margin-bottom: 25px
         &:hover .our-instagram-photo-hover
             visibility: visible
