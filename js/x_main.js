@@ -34,6 +34,8 @@ const openInstagramModal = function(e) {
     $('.our-instagram-block * .owl-item').removeClass('active');
 };
 
+const shomMoreInstagram = $('.button-show-more');
+
 $('.our-instagram-block').on('click', '.our-instagram-box', function() {
     let index = $(this).parent().index();
     // console.log(index-3);
