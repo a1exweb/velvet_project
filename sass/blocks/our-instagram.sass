@@ -1,16 +1,80 @@
 .our-instagram
     position: relative
+    &-rightside
+        display: none
     &_active
         position: fixed
         top: 0
         right: 0
         bottom: 0
         left: 0
-        padding-top: 5%
         background: #fff
         z-index: 9999
+        overflow-y: scroll
+        & * .owl-next, .owl-prev
+            background: #000 !important
         & > .our-instagram__close
             display: block
+        .our-instagram__title
+            margin-top: 20px
+            margin-bottom: 20px
+        & * .our-instagram
+            &-photo
+                margin: 0 25px
+                &-hover
+                    display: none
+            &-rightside
+                display: flex
+                flex-direction: column
+                margin-right: auto
+                max-width: 500px
+                padding: 25px
+                padding-top: 0
+                & * a, & > a
+                    color: $black
+            &-box
+                display: flex
+                align-items: flex-start
+                max-width: 70rem
+                margin: auto
+                margin-bottom: 20px
+            &__profile
+                max-width: 100%
+                max-height: 100%
+                border-radius: 50%
+                &-head
+                    flex-direction: column
+                &-name
+                    display: block
+                &-wrap
+                    width: 90px
+                    height: 90px
+                    margin-right: 15px
+                &-info
+                    display: flex
+                    align-items: center
+                    text-decoration: none
+            &__buttons
+                display: flex
+                align-items: center
+                margin-top: 20px
+                border-top: 1px solid #000
+                & button
+                    background-color: transparent
+                    margin-top: 5px
+                    margin-left: 5px
+                    border: 0
+                    &:nth-child(2)
+                        margin-left: 10px
+            &__data
+                margin-left: auto
+                margin-right: 5px
+            &__description
+                margin-top: 20px
+                & p
+                    margin-top: 5px
+                    &:first-child
+                        margin-top: 0
     &__close
         position: absolute
         top: 5%
@@ -80,3 +144,6 @@
     text-decoration: none
     background-color: $pink
     font-size: px-to-rem(28px)
+@media (max-width: 992px)
+    .our-instagram_active * .our-instagram-rightside
+        padding-top: 25px

@@ -9,38 +9,53 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
+
+const instagramPhoto = $('.our-instagram-photo');
+const instagramCloseBtn = $('.our-instagram__close');
+
+
+const closeInstagramModal = function() {
+    $('.our-instagram').removeClass('our-instagram_active');
+    $('body').css('overflow-y', 'scroll');
+    $('.owl-carousel').trigger('destroy.owl.carousel');
+    $('.button-show-more').css('display', 'flex');
+};
+
+const openInstagramModal = function(e) {
+    $('.our-instagram').addClass('our-instagram_active');
+    $('body').css('overflow-y', 'hidden');
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        navText: [' ', ' ']
+    });
+    $('.button-show-more').css('display', 'none');
+    $('.our-instagram-block * .owl-item').removeClass('active');
+};
+
+$('.our-instagram-block').on('click', '.our-instagram-box', function() {
+    let index = $(this).parent().index();
+    // console.log(index-3);
+    $('.our-instagram-block * .owl-item').removeClass('active');
+    $('.our-instagram-block * .owl-item').eq(index).addClass('active');
+    $(".owl-carousel").trigger('to.owl.carousel',[index-3,0]);
+})
+
 if ($(window).width() > 640) {
-    $('.our-instagram-photo').on('click', function() {
-        $('.our-instagram').addClass('our-instagram_active');
-        $('body').css('overflow-y', 'hidden');
+    instagramPhoto.on('click', openInstagramModal);
+    instagramCloseBtn.on('click', closeInstagramModal);
+}
+
+$(window).on('load resize', function () {
+    if ($(window).width() < 640) {
         $(".owl-carousel").owlCarousel({
             items: 1,
             loop: true,
             nav: true,
             navText: [' ', ' ']
         });
-        $('.button-show-more').css('display', 'none');
-    });
-    
-    $('.our-instagram__close').on('click', function() {
-        $('.our-instagram').removeClass('our-instagram_active');
-        $('body').css('overflow-y', 'scroll');
-        $(".owl-carousel").trigger('destroy.owl.carousel');
-        $('.button-show-more').css('display', 'flex');
-    });
-}
-
-
-$(window).on('load resize', function () {
-    if ($(window).width() < 640) {
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                nav: true,
-                navText: [' ', ' ']
-            });
-        });
+        instagramPhoto.on('click', openInstagramModal);
     }
 });
 
