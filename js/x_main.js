@@ -11,7 +11,7 @@ var swiper = new Swiper('.swiper-container', {
 
 
 const instagramPhoto = $('.our-instagram-photo');
-const instagramCloseBtn = $('.our-instagram__close');
+const instagramCloseBtn = $('.our-instagram-close');
 
 
 const closeInstagramModal = function() {
@@ -56,6 +56,15 @@ $(window).on('load resize', function () {
             navText: [' ', ' ']
         });
         instagramPhoto.on('click', openInstagramModal);
+        instagramCloseBtn.on('click', function() {
+            closeInstagramModal();
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                nav: true,
+                navText: [' ', ' ']
+            });
+        });
     }
 });
 
