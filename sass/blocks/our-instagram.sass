@@ -12,26 +12,32 @@
         right: 0
         bottom: 0
         left: 0
-        background: #fff
+        background: rgba($white, .9)
         z-index: 9999
-        & * .owl-next, .owl-prev
-            background: #000 !important
+        
+        // & * .owl-next, .owl-prev
+        //     background: #000 !important
         & * .our-instagram-close
             display: block
         & * .owl-item
             overflow-y: scroll
-            height: 50vh
+            height: 75vh
         .our-instagram
             &__title
                 display: flex
                 align-items: center
                 padding: 0 20px
-                max-width: 52rem
+                max-width: 55.7rem
                 width: 100%
                 margin-top: 20px
                 margin-bottom: 20px
             &-block
                 margin: unset
+                background: $white
+                &__image
+                    max-width: 700px
+            &-photo
+                max-width: 700px
         & * .our-instagram
             &-photo
                 margin: 0 25px
@@ -179,9 +185,11 @@
 @media (max-width: 992px)
     .our-instagram_active * .our-instagram-rightside
         padding-top: 25px
-@media (max-height: 850px)
     .our-instagram
         &_active
-            & * .owl-item
-                overflow-y: scroll
-                height: 80vh
+            .our-instagram
+                &-block
+                    &__image
+                        max-width: 500px
+                &-photo
+                    max-width: 500px
