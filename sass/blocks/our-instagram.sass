@@ -12,7 +12,7 @@
         right: 0
         bottom: 0
         left: 0
-        background: rgba($white, .9)
+        background: rgba($black, .5)
         z-index: 9999
         
         // & * .owl-next, .owl-prev
@@ -26,14 +26,22 @@
             &__title
                 display: flex
                 align-items: center
-                padding: 0 20px
-                max-width: 55.7rem
+                padding: 10px 27px
+                max-width: 55rem
                 width: 100%
-                margin-top: 20px
-                margin-bottom: 20px
+                background-color: $white
+                border: 3px solid $pink-light
+                border-bottom: 0
+                // margin-top: 20px
+                // margin-bottom: 20px
+                margin: 0
             &-block
                 margin: unset
+                padding-top: 30px
                 background: $white
+                max-width: 55rem
+                border: 3px solid $pink-light
+                border-top: 0
                 &__image
                     max-width: 700px
             &-photo
@@ -181,8 +189,12 @@
         align-items: center
         max-width: 42rem
     .our-instagram_active .our-instagram__title
-        max-width: 42rem
+        // max-width: 42rem
 @media (max-width: 992px)
+    .our-instagram_active .our-instagram__title, .our-instagram_active .our-instagram-block
+        border: 0
+    .our-instagram_active
+        background-color: $white
     .our-instagram_active * .our-instagram-rightside
         padding-top: 25px
     .our-instagram
