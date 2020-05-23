@@ -37,11 +37,15 @@ const openInstagramModal = function(e) {
 const shomMoreInstagram = $('.button-show-more');
 
 $('.our-instagram-block').on('click', '.our-instagram-box', function() {
-    let index = $(this).parent().index();
+    // let index = $(this).parent().index();
     // console.log(index-3);
-    $('.our-instagram-block * .owl-item').removeClass('active');
-    $('.our-instagram-block * .owl-item').eq(index).addClass('active');
-    $(".owl-carousel").trigger('to.owl.carousel',[index-3,0]);
+    // $('.our-instagram-block * .owl-item').removeClass('active');
+    // $('.our-instagram-block * .owl-item').eq(index).addClass('active');
+    // $(".owl-carousel").trigger('to.owl.carousel',[index-3,0]);
+    let photoId = $(this).attr('data-slide-insta');
+    $('[data-slide-insta=' + photoId + ']').parent().addClass('active');
+    $(".owl-carousel").trigger('to.owl.carousel',[photoId-1,0]);
+    console.log(photoId);
 })
 
 if ($(window).width() > 640) {
