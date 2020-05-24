@@ -56,11 +56,11 @@
     .catalog
         &-card
             zoom: .6
-    .our-instagram
-        &-photo
-            zoom: .6
-            margin: auto
-            margin-bottom: 25px
+    // .our-instagram
+    //     &-photo
+    //         zoom: .6
+    //         margin: auto
+    //         margin-bottom: 25px
     .about
         &__image
             zoom: .6
@@ -112,8 +112,8 @@
     .our-instagram
         &-block
             max-width: 600px
-            display: flex
-            justify-content: space-around
+            // display: flex
+            // justify-content: space-around
             &__line
                 display: flex
                 flex-direction: column
@@ -168,7 +168,10 @@
         padding-left: 0
     .main__header-leftside>.button-show
         margin: 30px auto
-
+@media ( max-width: 660px )
+    .our-instagram-block
+        width: 100%
+        columns: unset
 @media ( max-width: 600px )
     .catalog-block > .catalog-block__line:last-child
         display: none
